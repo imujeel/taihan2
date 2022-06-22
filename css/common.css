@@ -183,10 +183,8 @@ header:hover{
 }
 header > .header_wrapper{
     display: flex;
-    gap: 145px;
     align-items: center;
     justify-content: space-between;
-    /* align-items: flex-start; */
 }
 header .header_wrapper nav > ul{
     display: flex;
