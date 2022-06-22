@@ -1,0 +1,33 @@
+<svg version="1.1" id="scrolldownicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 276 500" style="enable-background:new 0 0 276 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{font-family:'Roboto-Regular';}
+	.st2{font-size:90px;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{animation:scrollDown 1s infinite;}
+	@keyframes scrollDown{
+		0%{transform:translateY(0);}
+		50%{transform:translateY(50px);}
+		100%{transform:translateY(0);}
+	}
+</style>
+<text id="Scroll_x5F_f" transform="matrix(1 0 0 1 26.9561 85.0054)" class="st0 st1 st2">Scroll</text>
+<g id="mouse">
+	<path class="st3" d="M141.5,295h-4c-22.3,0-40.5-18.2-40.5-40.5v-57.1c0-22.3,18.2-40.5,40.5-40.5h4c22.3,0,40.5,18.2,40.5,40.5
+		v57.1C182,276.8,163.8,295,141.5,295z"/>
+	<path class="st0" d="M140.5,216h-2c-4.4,0-8-3.6-8-8v-14c0-4.4,3.6-8,8-8h2c4.4,0,8,3.6,8,8v14C148.5,212.4,144.9,216,140.5,216z"
+		/>
+</g>
+<g id="scroll_x5F_down">
+	<g>
+		<line class="st4" x1="103.6" y1="376.5" x2="139.6" y2="411.9"/>
+		<line class="st4" x1="175.4" y1="376.3" x2="140" y2="412.3"/>
+	</g>
+	<g>
+		<line class="st4" x1="103.6" y1="409.5" x2="139.6" y2="444.9"/>
+		<line class="st4" x1="175.4" y1="409.3" x2="140" y2="445.3"/>
+	</g>
+</g>
+</svg>

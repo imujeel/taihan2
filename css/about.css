@@ -1,0 +1,113 @@
+@import url(common.css);
+
+/* CONTENT */
+/* LAYOUT */
+main article .ko{
+    font-size: calc(var(--body-fz)*1.8);
+    color: var(--sub-body-tc);
+}
+main article .category_tt{
+    margin:calc(var(--line-height)*3) 0 calc(var(--line-height)*1.8);
+}
+main article .main_tt{
+    text-transform: uppercase;
+    line-height: calc(var(--line-height)*3);
+    position: relative;
+}
+main article .main_tt:before{
+    content:'';
+    position: absolute;
+    width: 5px;
+    height:100%;
+    left: -27px;
+    background-image: linear-gradient(var(--primary-c) 0%, #F60230 100%);
+}
+main article h3.ko{
+    font-weight: 500;
+    margin-bottom:var(--line-height);
+    line-height: calc(var(--line-height)*1.9);
+}
+main:before{
+    content:'';
+    background: url(/images/earth_background.png) no-repeat;
+    position: absolute;
+    width: 1052px;
+    height: 864px;
+    z-index: -1;
+    right: 0;
+    top: 800px;
+}
+main > article > p{
+    color: var(--sub-body-tc);
+    width: 800px;
+    font-size:calc(var(--body-fz)*1.167);
+    line-height: 30px;
+    margin-bottom: calc(var(--line-height)*2);
+}
+main > article > p.indent{
+    margin-left: 30px;
+    margin-bottom: calc(var(--line-height)*1.667);
+}
+main > article > p.indent span{
+    margin-right: 10px;
+    font-weight: 600;
+    color: var(--primary-c);
+}
+main .about_intro h3.ko em{
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--primary-c);
+}
+.about_vision .vision_infographic ul{
+    display: flex;
+    gap: 120px;
+}
+.about_vision .vision_infographic ul li div{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:var(--white);
+    font-weight: 600;
+    width: 333px;
+    height: 333px;
+    border-radius: 50%;
+    background: var(--primary-c);
+}
+.about_vision .vision_infographic ul li:nth-child(2) div{
+    background: #D42D26;
+}
+.about_vision .vision_infographic ul li div:after{
+    content: '';
+    position: absolute;
+    left: 15px; right: 15px;top: 15px;bottom: 15px;
+    border:1px solid #ebebeb;
+    border-radius: 50%;
+}
+.about_vision .vision_infographic ul li div > span{
+    font-size: 77px;
+}
+.about_vision .vision_infographic ul li div p:nth-child(2){
+    font-size: 48px;
+}
+.about_vision .vision_infographic ul li div p:last-child{
+    font-size: 28px;
+}
+.about_vision .vision_infographic ul li > p{
+    font-weight: 500;
+    color: #555;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 23px;
+    line-height: calc(var(--line-height)*1.4);
+}
+.about_vision .image_container{
+    margin: 100px 0;
+    background: url('/images/vision_image.png') no-repeat center / cover;
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+}
+
