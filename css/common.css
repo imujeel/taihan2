@@ -242,7 +242,7 @@ header .logo a{
     height: 35px;
     display: inline-block;
     text-indent: -9999em;
-    background: url(/images/taihanlogo_transparent.svg) no-repeat;
+    background: url(../images/taihanlogo_transparent.svg) no-repeat;
     transform: translateY(-5px);
 }
  /* Search field */
@@ -305,7 +305,7 @@ header .logo a{
 }
 .search_field fieldset form .search_box a{
     position: absolute;
-    background: url(/images/exit_btn.svg);
+    background: url(../images/exit_btn.svg);
     width: 50px;height: 50px;
     text-indent: -9999em; 
     right: -80px;
@@ -397,7 +397,7 @@ footer .copyright div address small{
 }
 .banner .banner_wrapper{
     position:relative;
-    background: url(/images/banner_img.png) no-repeat center / cover;
+    background: url(../images/banner_img.png) no-repeat center / cover;
     height: 340px;
 }
 .banner .banner_wrapper * {
