@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2차 포트폴리오 - 대한전선 taihan 리뉴얼 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css변수, css-flex, jquery">
+    <meta name="description" content="css-flex 기반 레이아웃, Jquery, 웹표준, 웹접근성 준수하는 포트폴리오 ">
+    <meta name="robots" content="index,follow">
+    <meta name="authour" content="JUMI LEE">
+    <meta name="reply-to" content="marpungsun@gmail.com">
+    <meta name="generator" content="visual studio code">
+    <meta name="copyright" content="(c)Jumi Lee">
+    <meta name="google-site-verification" content="p1be1Z8nEUtG3eBQMRqclAnlVVHz7uxLd-hSnwn1BIc" /> 
+    <!-- Modernizer -->
+    <!-- open graph -->
+    <!-- favicon --> 
+    <!-- 기타 라이브러리 (레티나, 등등) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css.map">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <ul id="menu">
+        <li data-menuanchor="firstPage"><a href="#firstPage"></a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage"></a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage"></a></li>
+        <li data-menuanchor="4thPage"><a href="#4thPage"></a></li>
+        <li data-menuanchor="5thPage"><a href="#5thPage"></a></li>
+    </ul>
+    <header id="header">
+        <div class="header_wrapper">
+                <h1 class="logo"><a href="">taihan</a></h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="about.html">about us</a>
+                            <ul>
+                                <li><a href="about.html">회사소개</a></li>
+                                <li><a href="">경쟁력</a></li>
+                                <li><a href="">연혁</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">products</a>
+                            <ul>
+                                <li><a href="">사업개요</a></li>
+                                <li><a href="">전력분야</a></li>
+                                <li><a href="">통신분야</a></li>
+                                <li><a href="">소재분야</a></li>
+                                <li><a href="">시스템분야</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">careers</a>
+                            <ul>
+                                <li><a href="">인재상</a></li>
+                                <li><a href="">복지제도</a></li>
+                                <li><a href="">채용안내</a></li>
+                                <li><a href="">채용지원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">esg</a>
+                            <ul>
+                                <li><a href="">환경경영</a></li>
+                                <li><a href="">윤리경영</a></li>
+                                <li><a href="">지배구조</a></li>
+                            </ul>
+                        </li>
+                        <li class="target">
+                            <a href="">investor relations</a>
+                            <ul>
+                                <li><a href="">개요</a></li>
+                                <li><a href="">재무정보</a></li>
+                                <li><a href="">주식 및 주주정보</a></li>
+                                <li><a href="">IR 자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">newsroom</a>
+                            <ul>
+                                <li><a href="">회사소식</a></li>
+                                <li><a href="">기술자료실</a></li>
+                                <li><a href="">홍보자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <span class="menu_highlight"></span> -->
+                </nav>
+                <ul class="top_links">
+                    <li>
+                        <a href="" class="language material-symbols-rounded">language</a>
+                    </li>
+                    <li>
+                        <a href="" class="search material-symbols-rounded">search</a>
+                    </li>
+                    <li>
+                        <a href="" class="client btn w_color"><span class="material-symbols-rounded">person_pin</span>Client Portal</a>
+                    </li>
+                    <li><button class="mobile_menu_toggle material-symbols-rounded">menu</button></li>
+                </ul>
+                
+            </div>
+        </header>
+        <div class="search_field hidden">
+            <fieldset>
+                <legend class="hidden">검색</legend>
+                <form action="#" method="get">
+                    <p>대한전선에 궁금한 것이 있으신가요?</p>
+                    <p class="search_box">
+                        <label for="usersearch"></label>
+                        <input type="text" id="usersearch" name="usersearch" placeholder="무엇이든 검색하세요." autofocus>
+                        <button>Search</button>
+                        <a href="" class="search_exit">Exit</a>
+                    </p>
+                </form>
+            </fieldset>
+        </div>
+    <main id="fullpage">
+        <section class="section">
+            <div class="my_mainslide slide_wrapper main_slide">
+                <ul class="slide_container">
+                    <li class="slide1 slide">
+                        <div class="content container">
+                            <p class="animate__animated">Cable &amp; Solution</p>
+                            <h2 class="main_tt animate__animated">We Connect the Future</h2>
+                            <p class="animate__animated">어둠이 걷히고 언제나 빛이 머무는 세상,<br>당신을 그 세상에 연결하고 더 나을 내일로 나아가게 하는 길<br>그 길을 대한전선이 만들어 갑니다.</p>
+                            <a href="about.html" class="learn_more btn w_color animate__animated">Learn more<span class="material-symbols-rounded">read_more</span></a>
+                        </div>
+                    </li>
+                    <li class="slide2 slide">
+                        <div class="content container">
+                            <p>Cable &amp; Solution</p>
+                            <h2 class="main_tt animate__animated">The Power to Brigten our Future</h2>
+                            <p class="animate__animated">어둠이 걷히고 언제나 빛이 머무는 세상,<br>당신을 그 세상에 연결하고 더 나을 내일로 나아가게 하는 길<br>그 길을 대한전선이 만들어 갑니다.</p>
+                            <a href="" class="learn_more btn w_color">Learn more<span class="material-symbols-rounded">read_more</span></a>
+                        </div>
+                    </li>
+                    <li class="slide3 slide">
+                        <div class="content container">
+                            <p>Cable &amp; Solution</p>
+                            <h2 class="main_tt animate__animated">More Prosperous Future,<br>Happier World</h2>
+                            <p>어둠이 걷히고 언제나 빛이 머무는 세상,<br>당신을 그 세상에 연결하고 더 나을 내일로 나아가게 하는 길<br>그 길을 대한전선이 만들어 갑니다.</p>
+                            <a href="" class="learn_more btn w_color">Learn more<span class="material-symbols-rounded">read_more</span></a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <p class="controls">
+                    <a href="" class="material-symbols-rounded"> arrow_back_ios</a>
+                    <a href="" class="material-symbols-rounded"> arrow_forward_ios</a>
+                    
+                </p> -->
+                <div class="scroll_down">
+                    <img src="./images/mouse_scroll_down.svg" alt="scrolldown">
+                </div>
+                <div class="small_wrapper">
+                    <!-- <div class="indicator">
+                        <p class="pagers">
+                            <a href="">1</a>
+                            <a href="">2</a>
+                            <a href="" class="active">3</a>
+                        </p>
+                        <p class="play_btns">
+                            <span class="play">play</span>
+                            <span class="pause active"> pause </span>
+                        </p>
+                    </div> -->
+                    <img src="" alt="">
+                    <div class="news_small">
+                        <p class="show_hide_btn">
+                            <button type="button" class="show"><span class="material-symbols-rounded">expand_less</span>Show</button>
+                            <button type="button" class="hide"><span class="material-symbols-rounded">expand_more</span><br>Hide</button>
+                        </p>
+                        <div class="container">
+                            <div class="whats_new">
+                                <span class="title_wrapper">
+                                    <p>What's New</p>
+                                    <p><a href=""><span class="material-symbols-rounded">call_made</span>뉴스룸 바로가기</a></p>
+                                </span>
+                                <span class="content_wrapper">
+                                    <ul>
+                                        <li class="slide_small_1">
+                                            <img src="./images/whats_new_li_01.png" alt="">
+                                            <p>EN(Energy Networks)및 SIEF(한국전기산업대전) 전시 참가</p>
+                                        </li>
+                                        <li class="slide_small_2">
+                                            <img src="./images/whats_new_li_02.png" alt="">
+                                            <p>미국서 3,400만불 규모 초고압케이블 수주</p>
+                                        </li>
+                                        <li class="slide_small_3">
+                                            <img src="./images/whats_new_li_03.png" alt="">
+                                            <p>	한국전력공사와 해상풍력산업 활성화를 위한 양해각서 체결</p>
+                                        </li>
+                                    </ul>
+                                    <p class="pagers_small">
+                                        <a href="" class="active">1</a>
+                                        <a href="">2</a>
+                                        <a href="">3</a>
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="job_posting">
+                                <span class="title_wrapper">
+                                    <p>Job Posting</p>
+                                    <p><a href=""><span class="material-symbols-rounded">call_made</span>채용공고 바로가기</a></p>
+                                </span>
+                                <ul>
+                                    <li><a href="">2022년 하반기 경력, 신입사원 수시채용<span class="material-symbols-rounded">trending_flat</span></a></li>
+                                    <li><a href="">2022년 상반기 공개채용 최종 합격자 발표<span class="material-symbols-rounded">trending_flat</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>b
+            </div>
+        </section>
+        <section class="history section">
+            <div class="history_wrapper">
+                <div class="content container">
+                    <h2 class="main_tt animate__animated">Our History</h2>
+                    <p class="section_p ko animate__animated">1941년 대한민국 최초의 전선회사인<br>조선전선으로 출범한 이래,<br>60년이 넘는 성장의 역사를 일구어 온 대한 전선<br>최초라는 이름을 넘어 최고의 자리를 향해<br>대한전선은 쉼 없이 나아갑니다.</p>
+                    <!-- read more 이미지 처리하기 -->
+                    <a href="" class="read_more animate__animated"><img src="./images/readmore_btn.svg" alt="read_more"></a>
+                    <div class="graph">
+
+<!-- line svg 시작 -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 501" style="enable-background:new 0 0 1280 501;" xml:space="preserve">
+<g id="line">
+	<path id="flighticon" class="st0" d="M1049.8,105.9l-5.8-9.7l2.3-0.4l3.9,3.4l12.5-3.3l-9.4-15.9l3.2-0.9l15.8,14.2l12-3.2
+		c1-0.3,1.9-0.1,2.7,0.6s1.2,1.5,1.2,2.5c0,0.7-0.2,1.3-0.7,1.9s-1,0.9-1.7,1.1L1049.8,105.9z"/>
+	<polyline id="line_1_" class="st1" points="93,378 1041.4,143.7 1275.2,3 	"/>
+</g>
+<g id="text">
+	<g id="y1941_1_">
+		<circle id="startdot_11_" class="st2" cx="86.5" cy="380.5" r="6.5"/>
+		<text transform="matrix(1 0 0 1 67.394 417.2217)"><tspan x="0" y="0" class="st3 st4 st5">1941</tspan><tspan x="0" y="20" class="st3 st6 st7">조선전선 출범</tspan><tspan x="0" y="34" class="st3 st8 st9">(대한민국 최초의 전선회사)</tspan></text>
+	</g>
+	<g id="y1970_1_">
+		<g id="dash1_18_">
+			<g>
+				<line class="st10" x1="375.5" y1="308.5" x2="375.5" y2="311"/>
+				<line class="st11" x1="375.5" y1="314.2" x2="375.5" y2="363.3"/>
+				<line class="st10" x1="375.5" y1="364.9" x2="375.5" y2="367.4"/>
+			</g>
+		</g>
+		<circle id="startdot_10_" class="st12" cx="375.5" cy="372.9" r="6.5"/>
+		<text transform="matrix(1 0 0 1 355.394 405.6357)"><tspan x="0" y="0" class="st3 st4 st5">1970</tspan><tspan x="0" y="20" class="st3 st6 st7">도약</tspan><tspan x="25.8" y="20" class="st3 st6 st7">·성장의 가속화</tspan><tspan x="114.4" y="20" class="st3 st6 st7"> </tspan></text>
+	</g>
+	<g id="y1990_1_">
+		<g id="dash1_16_">
+			<g>
+				<line class="st10" x1="709.5" y1="228.5" x2="709.5" y2="231"/>
+				<line class="st13" x1="709.5" y1="234.1" x2="709.5" y2="363.4"/>
+				<line class="st10" x1="709.5" y1="364.9" x2="709.5" y2="367.4"/>
+			</g>
+		</g>
+		<circle id="startdot_9_" class="st12" cx="709.5" cy="372.9" r="6.5"/>
+		<text transform="matrix(1 0 0 1 689.394 405.6357)"><tspan x="0" y="0" class="st3 st4 st5">1990</tspan><tspan x="0" y="20" class="st3 st6 st7">글로벌 전선기업 선전 </tspan></text>
+	</g>
+	<g id="y1980_1_">
+		<g id="dash1_14_">
+			<g>
+				<line class="st10" x1="554.5" y1="265.5" x2="554.5" y2="268"/>
+				<line class="st14" x1="554.5" y1="270.9" x2="554.5" y2="363.4"/>
+				<line class="st10" x1="554.5" y1="364.9" x2="554.5" y2="367.4"/>
+			</g>
+		</g>
+		<circle id="startdot_8_" class="st12" cx="554.5" cy="372.9" r="6.5"/>
+		<text transform="matrix(1 0 0 1 535.394 405.6357)"><tspan x="0" y="0" class="st3 st4 st5">1980</tspan><tspan x="0" y="20" class="st3 st6 st7"> </tspan></text>
+		<text transform="matrix(1 0 0 1 534.4161 425.3923)" class="st3 st6 st7">설비공장 및</text>
+		<text transform="matrix(1 0 0 1 534.4161 443.3923)" class="st3 st6 st7">기술 연구소 출범</text>
+	</g>
+	<g id="y2000_1_">
+		<g id="dash1_12_">
+			<g>
+				<line class="st10" x1="887.8" y1="187" x2="887.8" y2="189.5"/>
+				<line class="st15" x1="887.8" y1="192.5" x2="887.8" y2="364.9"/>
+				<line class="st10" x1="887.8" y1="366.4" x2="887.8" y2="368.9"/>
+			</g>
+		</g>
+		<circle id="startdot_7_" class="st12" cx="887.8" cy="374.3" r="6.4"/>
+		<text transform="matrix(1 0 0 1 868.0312 406.5225)"><tspan x="0" y="0" class="st3 st4 st16">2000</tspan><tspan x="0" y="19.7" class="st3 st6 st17"> </tspan></text>
+		<text transform="matrix(1 0 0 1 867.0693 425.958)" class="st3 st6 st17">변화를 통한</text>
+		<text transform="matrix(1 0 0 1 867.0693 443.666)" class="st3 st6 st17">성장기반 구축</text>
+	</g>
+	<g id="y2010_1_">
+		<g id="dash1_3_">
+			<g>
+				<line class="st10" x1="1041.5" y1="146.5" x2="1041.5" y2="149"/>
+				<line class="st18" x1="1041.5" y1="152" x2="1041.5" y2="363.4"/>
+				<line class="st10" x1="1041.5" y1="364.9" x2="1041.5" y2="367.4"/>
+			</g>
+		</g>
+		<circle id="startdot_6_" class="st12" cx="1041.5" cy="372.9" r="6.5"/>
+		<text transform="matrix(1 0 0 1 1023.394 405.6357)"><tspan x="0" y="0" class="st3 st4 st5">2010 ~</tspan><tspan x="0" y="20" class="st3 st6 st7"> </tspan></text>
+		<text transform="matrix(1 0 0 1 1022.4161 425.3923)" class="st3 st6 st7">백년 기업을 향한</text>
+		<text transform="matrix(1 0 0 1 1022.4161 443.3923)" class="st3 st6 st7">새로운 출발</text>
+	</g>
+</g>
+</svg>
+
+<!-- line svg 끝-->
+                       
+                    </div>
+                </div>
+                <div class="counters">
+                    <ul class="counter_list">
+                        <li>
+                            <span class="material-symbols-rounded">work_history</span>
+                            <h3 id="years">0</h3>
+                            <h4>Years</h4>
+                        </li>
+                        <li>
+                            <span class="material-symbols-rounded"> group</span>
+                            <h3 id="group">0</h3>
+                            <h4>Employees</h4>
+                        </li>
+                        <li>
+                            <span class="material-symbols-rounded">public</span>
+                            <h3 id="public">0</h3>
+                            <h4>Countries</h4>
+                        </li>
+                        <li>
+                            <span class="material-symbols-rounded">real_estate_agent</span>
+                            <h3 id="sales">0</h3> <!-- 천단위 콤마 구현 -->
+                            <h4>Sales</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="factory section">
+            <div class="content">
+                <h2 class="main_tt animate__animated">Our Factory</h2>
+                <p class="section_p ko animate__animated">대한전선의 기술의 중심이자 핵심 동력<br>단일전선 공장으로 세계 최대 규모를 자랑하는 당진공장은<br>최첨단 생산라인과 친환경 시스템을 갖춘<br>‘Smart & Green Factory’ 입니다.</p>
+                <p class="section_p ko animate__animated">초고압, 산업전선, 소재 등의 단일전선과 세계 최고 높이<br>vcv타워에서 도체 생산부터 완제품 시험까지 모든 공정을<br>one-stop으로 수행하며 완벽한 제품을 생산합니다.</p>
+                <a href="" class="read_more animate__animated"><img src="./images/readmore_btn.svg" alt="read_more"></a>
+            </div>
+        </section>
+        <section class="products section">
+            <div class="prod_con_wrapper">
+                <div class="content">
+                    <h2 class="main_tt animate__animated">Our Products</h2>
+                    <p class="section_p ko animate__animated">대한전선의 주요 사업분야는 전력분야, 통신분야, 소재분야, 시스템 분야 4가지로 어둠을 밝히는 전등불부터 공장을 움직이는 동력까지, 대한전선은 세상 모든 곳에 에너지와 정보를 전달합니다.</p>
+                    <p class="section_p ko animate__animated">최고의 기술과 품질의 실현으로 멈추지 않는 도전과 혁신으로 우리가 맞을 내일 우리가 꿈꾸는 희망, 우리가 기대하는 미래를 향해 두려움 없이 새 길을 열어가겠습니다.</p>
+                </div>
+            </div>
+            <div class="category_wrapper">
+                <div class="product_category">
+                    <ul>
+                        <li class="power_generator animate__animated">
+                            <a href="">
+                                <span>
+                                    <span class="material-symbols-rounded">electric_meter</span>
+                                    <h3>Power Generator</h3>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis nam sequi culpa modi deserunt expedita magnam. Corrupti quam dolorum ducimus maiores adipisci itaque ipsa tempora quaerat deleniti, ipsum fugiat.</p> -->
+                                </span>
+                                <span class="img"></span>
+                                <!-- 각 리스트에 active시 보여질 텍스트, read more 버튼 추가 -->
+                            </a>
+                        </li>
+                        <li class="communication animate__animated">
+                            <a href="">
+                                <span>
+                                    <span class="material-symbols-rounded">cell_tower</span>
+                                    <h3>Communication<br>Cables</h3>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis nam sequi culpa modi deserunt expedita magnam. Corrupti quam dolorum ducimus maiores adipisci itaque ipsa tempora quaerat deleniti, ipsum fugiat.</p> -->
+                                </span>
+                                <span class="img"></span>
+                            </a>
+                        </li>
+                        <li class="base_metal animate__animated">
+                            <a href="">
+                                <span>
+                                    <span class="material-symbols-rounded">precision_manufacturing</span>
+                                    <h3>Base Metal</h3>
+                                </span>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis nam sequi culpa modi deserunt expedita magnam. Corrupti quam dolorum ducimus maiores adipisci itaque ipsa tempora quaerat deleniti, ipsum fugiat.</p> -->
+                                <span class="img"></span>
+                            </a>
+                        </li>
+                        
+                        <li class="stystems animate__animated">
+                            <a href="">
+                                <span>
+                                    <span class="material-symbols-rounded">solar_power</span>
+                                    <h3>Stystems</h3>
+                                </span>
+                                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis nam sequi culpa modi deserunt expedita magnam. Corrupti quam dolorum ducimus maiores adipisci itaque ipsa tempora quaerat deleniti, ipsum fugiat.</p> -->
+                                <span class="img"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="certification section">
+            <div class="title">
+                <h2 class="main_tt animate__animated">Certification</h2>
+                <p class="section_p ko animate__animated">대한전선의 인증현황에 대해 소개합니다.</p>
+            </div>
+            <div class="content container">
+                <a href=""><span class="material-symbols-rounded">download_for_offline</span>다운로드 바로가기</a>
+                <ul>
+                    <li class="item1 animate__animated">
+                        <div class="card_desc">
+                            <h3>품질인증</h3>
+                            <p>시스템 인증 및 제품인증<br>1993 - 2021</p>
+                            <a href="" class="view_details"><span class="material-symbols-rounded">call_made</span>자세히 보기</a>
+                        </div>
+                        <img src="./images/certification_card.png" alt="">
+                    </li>
+                    <li class="item2 animate__animated">
+                        <div class="card_desc">
+                            <h3>환경인증</h3>
+                            <p>시스템 인증 및 제품인증<br>2001 - 2006</p>
+                            <a href="" class="view_details"><span class="material-symbols-rounded">call_made</span>자세히 보기</a>
+                        </div>
+                        <img src="./images/certification_card.png" alt="">
+                    </li>
+                    <li class="item3 animate__animated">
+                        <div class="card_desc">
+                            <h3>안전보건인증</h3>
+                            <p>시스템 인증 및 제품인증<br>2020 - 2021</p>
+                            <a href="" class="view_details"><span class="material-symbols-rounded">call_made</span>자세히 보기</a>
+                        </div>
+                        <img src="./images/certification_card.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <footer class="section fp-auto-height">
+            <div class="footer_menu">
+                <div class="ft_container container">
+                    <ul class="menu_link">
+                        <li><a href="">사이트맵</a></li>
+                        <li><a href="">개인정보 처리방침</a></li>
+                        <li><a href="">윤리경영</a></li>
+                        <li><a href="">웹접근성 도움말</a></li>
+                    </ul>
+                    <ul class="social_link">
+                        <li><a href="" class="fa-brands fa-linkedin-in"></a></li>
+                        <li><a href="" class="fa-brands fa-instagram"></a></li>
+                        <li><a href="" class="fa-brands fa-facebook-f"></a></li>
+                        <li><a href="" class="fa-brands fa-youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <img src="./images/taihanlogo_transparent_footer.svg" alt="taihanlogo" class="footer_logo">
+                    <address>
+                        <p>(서울 사옥) 서울특별시 서초구 양재대로2길 19 호반파크 2관</p>
+                        <p>대표번호 : 02-316-9114</p>
+                        <hr>
+                        <small>COPYRIGHT &copy;2011 Taihan Cable &amp; Solution Co., Ltd. ALL RIGHT RESERVED</small>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/fullpage.extensions.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G14LSVPM0M"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G14LSVPM0M');
+    </script>
+    ㅇ
+</body>
+</html>
