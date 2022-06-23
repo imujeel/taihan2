@@ -1,24 +1,30 @@
-let header = $('header'),
-    menu = header.find('.header_wrapper>nav>ul>li'),
-    headerHeight = header.outerHeight(),
-    newHeight = 0,
-    subMenu = menu.find('ul'),
-    link = menu.find('a');
-
-        //subMenu 높이 구하기
-    subMenu.each(function(){
-        if($(this).outerHeight()>newHeight){
-            newHeight = headerHeight + $(this).outerHeight();
-        }
-    });
-    header.hover(
-    function(){		
-        header.stop().animate({height:newHeight});
-    },
-    function(){
-        header.stop().animate({height:headerHeight});
+    function DropDownHeader(){
+        let header = $('header'),
+            menu = header.find('.header_wrapper>nav>ul>li'),
+            headerHeight = header.outerHeight(),
+            newHeight = 0,
+            subMenu = menu.find('ul'),
+            link = menu.find('a');
+        
+                //subMenu 높이 구하기
+            subMenu.each(function(){
+                if($(this).outerHeight()>newHeight){
+                    newHeight = headerHeight + $(this).outerHeight();
+                }
+            });
+            header.hover(
+            function(){		
+                header.stop().animate({height:newHeight});
+            },
+            function(){
+                header.stop().animate({height:headerHeight});
+            }
+            );//DropDownHeader
     }
-    );//DropDown menu
+    let windowWidth = $(window).width();
+        if(windowWidth > 768){
+            DropDownHeader();
+        }
 
 // let navMenu = $('header nav > ul > li'),
 //     highLight = $('.menu_highlight');
