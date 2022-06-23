@@ -1,3 +1,5 @@
+  
+
     function DropDownHeader(){
         let header = $('header'),
             menu = header.find('.header_wrapper>nav>ul>li'),
@@ -21,10 +23,12 @@
             }
             );//DropDownHeader
     }
-    let windowWidth = $(window).width();
-        if(windowWidth > 768){
-            DropDownHeader();
-        }
+    $(window).resize(function(){
+        let windowWidth = $(window).width();
+            if(windowWidth > 768){
+                DropDownHeader();
+            }
+    });
 
 // let navMenu = $('header nav > ul > li'),
 //     highLight = $('.menu_highlight');

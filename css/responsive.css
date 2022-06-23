@@ -3,7 +3,7 @@
 
 } */
 
-/* HEADER */
+/* COMMON HEADER */
 @media screen and (max-width:768px){
    header nav, header .top_links .language{
        display: none;
@@ -18,12 +18,60 @@
         order:3;
     }
     header{
-    padding:15px 40px;
+    padding:13px 40px;
+    background: #fff;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 10%);
+    }
+    header .top_links *{
+        color: var(--primary-c);
+    }
+    header .top_links .client{
+        border-color: var(--primary-c);
     }
     .mobile_menu_toggle{
         display: block;
     }
+
+    /* MAIN PAGE */
+    .my_mainslide .slide_container .content{
+        text-align: center;
+        transform: none;
+        margin: 0;
+    }
+    .main_tt{
+        font-size: 38px;
+        line-height: 48px;
+    }
+    /* .my_mainslide .slide_container .slide .content p:first-child{
+        font-size: 18px;
+    } */
+    .my_mainslide .slide_container .slide .content p.ko{
+        font-size: 21px;
+        line-height: 32px;
+    }
+    .slide_container .controls.prev{
+        margin-left: 0;
+    }
+    .slide_container .controls.next{
+        margin-right: -15px;
+    }
+    #menu {
+        display: none;
+    }
+    .my_mainslide .news_small .container{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .my_mainslide .news_small .container .job_posting{
+        display: none;
+    }
+    
 }
+/* my_mainslide */
+    
+
+
+
 @media screen and (max-width:320px){
     header {
         background-color: var(--white);
