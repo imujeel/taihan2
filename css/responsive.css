@@ -4,7 +4,7 @@
 } */
 
 /* COMMON HEADER */
-@media screen and (max-width:768px){
+@media all and (max-width:1023px){
    header nav, header .top_links .language{
        display: none;
    }

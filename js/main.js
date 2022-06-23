@@ -117,3 +117,4 @@ function numAnimation(){
 		}// what's new mini slide
 		
 	
+		

@@ -1,6 +1,4 @@
-  
-
-    function DropDownHeader(){
+function DropDownHeader(){
         let header = $('header'),
             menu = header.find('.header_wrapper>nav>ul>li'),
             headerHeight = header.outerHeight(),
@@ -23,12 +21,17 @@
             }
             );//DropDownHeader
     }
+    
     $(window).resize(function(){
         let windowWidth = $(window).width();
-            if(windowWidth > 768){
+        let downIcon = $('.my_mainslide .scroll_down img')
+            if(windowWidth > 1023){
                 DropDownHeader();
+                downIcon.attr('src','./images/scroll_down.svg');
+            }else{
+                downIcon.attr('src','./images/swipe_down.svg');
             }
-    });
+    }).resize(); //responsive js
 
 // let navMenu = $('header nav > ul > li'),
 //     highLight = $('.menu_highlight');

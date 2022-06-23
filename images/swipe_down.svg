@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="swipedownicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 261 338" style="enable-background:new 0 0 261 338;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st1{font-family:'Roboto-Regular';}
+	.st2{font-size:90px;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{animation:scrollDown 1s infinite;}
+	@keyframes scrollDown{
+		0%{transform:translateY(0);}
+		50%{transform:translateY(50px);}
+		100%{transform:translateY(0);}
+	}
+</style>
+<text id="Swipe_x5F_t" transform="matrix(1 0 0 1 7.9681 85.0054)" class="st0 st1 st2">Swipe</text>
+<g id="swipe_x5F_down">
+	<g>
+		<line class="st3" x1="60.5" y1="135.8" x2="128.7" y2="202.9"/>
+		<line class="st3" x1="196.5" y1="135.5" x2="129.4" y2="203.6"/>
+	</g>
+	<g>
+		<line class="st3" x1="60.5" y1="198.3" x2="128.7" y2="265.4"/>
+		<line class="st3" x1="196.5" y1="198" x2="129.4" y2="266.1"/>
+	</g>
+</g>
+</svg>
