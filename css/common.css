@@ -230,7 +230,7 @@ header .header_wrapper nav > ul > li > ul li{
 }
 header .top_links{
     display: flex;
-    gap: 30px;
+    gap: 15%;
     align-items: center;
 }
 header .top_links .client{

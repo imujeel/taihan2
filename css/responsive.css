@@ -1,10 +1,7 @@
-/* tablet */
-/* @media screen and (max-width:1024px){
-
-} */
 
 /* COMMON HEADER */
-@media all and (max-width:1023px){
+    /* tablet */
+@media screen and (max-width:1023px){
    header nav, header .top_links .language{
        display: none;
    }
@@ -18,7 +15,7 @@
         order:3;
     }
     header{
-    padding:13px 40px;
+    padding:10px 40px;
     background: #fff;
     box-shadow: 1px 1px 4px rgb(0 0 0 / 10%);
     }
@@ -69,14 +66,47 @@
 }
 /* my_mainslide */
     
-
-
-
-@media screen and (max-width:320px){
-    header {
-        background-color: var(--white);
+/* mobile */
+@media (max-width:768px){
+    header .logo a{
+        width: 100px;
+        transform: none;
     }
-    header .top_links *{
-        color:var(--primary-c);
+    header{
+        padding:5px 20px;
     }
+    header .top_links li:nth-child(3){
+        display: none;
+    }
+    .slide_container .controls{
+        display: none;
+    }
+    .news_small{
+        display: none;
+    }
+    .fp-slidesNav{
+        bottom: 30px !important;
+    }
+
+    .main_tt{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .my_mainslide .slide_container .slide .content p:first-child{
+        font-size: 18px;
+    }
+    .my_mainslide .slide_container .slide .content p.ko{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .plus_btn{
+        display: block;
+    }
+   
+    .material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 7
+    }
+
 }

@@ -1,26 +1,28 @@
-function DropDownHeader(){
-        let header = $('header'),
-            menu = header.find('.header_wrapper>nav>ul>li'),
-            headerHeight = header.outerHeight(),
-            newHeight = 0,
-            subMenu = menu.find('ul'),
-            link = menu.find('a');
+
+        function DropDownHeader(){
+            let header = $('header'),
+                menu = header.find('.header_wrapper>nav>ul>li'),
+                headerHeight = header.outerHeight(),
+                newHeight = 0,
+                subMenu = menu.find('ul'),
+                link = menu.find('a');
         
-                //subMenu 높이 구하기
-            subMenu.each(function(){
-                if($(this).outerHeight()>newHeight){
-                    newHeight = headerHeight + $(this).outerHeight();
+                subMenu.each(function(){
+                    if($(this).outerHeight()>newHeight){
+                        newHeight = headerHeight + $(this).outerHeight();
+                    }
+                });//subMenu 높이 구하기
+    
+                header.hover(function(){		
+                    header.stop().animate({height:newHeight});
+                },
+                function(){
+                    header.stop().animate({height:headerHeight});
                 }
-            });
-            header.hover(
-            function(){		
-                header.stop().animate({height:newHeight});
-            },
-            function(){
-                header.stop().animate({height:headerHeight});
-            }
-            );//DropDownHeader
-    }
+                );//DropDownHeader
+        
+
+        }
     
     $(window).resize(function(){
         let windowWidth = $(window).width();
@@ -31,7 +33,7 @@ function DropDownHeader(){
             }else{
                 downIcon.attr('src','./images/swipe_down.svg');
             }
-    }).resize(); //responsive js
+    }); //responsive js
 
 // let navMenu = $('header nav > ul > li'),
 //     highLight = $('.menu_highlight');

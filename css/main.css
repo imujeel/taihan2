@@ -759,3 +759,16 @@ section.active .stystems{
     box-shadow:3px 5px 10px rgba(0,0,0,.2);
     border-radius:8px;
 }
+
+.plus_btn{
+    background: var(--primary-c);
+    width: 50px;height: 50px;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    left:20px;
+    bottom: 80px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+}
