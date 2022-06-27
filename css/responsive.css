@@ -10,6 +10,7 @@
     } 
     header .top_links li:nth-child(3){
         order:1;
+
     }
     header .top_links li:nth-child(4){
         order:3;
@@ -29,21 +30,27 @@
         display: block;
     }
 
-    /* MAIN PAGE */
-    .my_mainslide .slide_container .content{
+/* MAIN PAGE */
+    /* first section */
+    .section .content{
+        width: 100%;
         text-align: center;
-        transform: none;
+        transform: none !important;
         margin: 0;
     }
+    .section .content .read_more{
+        margin: calc(var(--line-height)*2) auto;
+        width: 90px;
+    }
     .main_tt{
-        font-size: 38px;
+        font-size:38px;
         line-height: 48px;
     }
     /* .my_mainslide .slide_container .slide .content p:first-child{
         font-size: 18px;
     } */
-    .my_mainslide .slide_container .slide .content p.ko{
-        font-size: 21px;
+    .content p.ko{
+        font-size: 3.8vw;
         line-height: 32px;
     }
     .slide_container .controls.prev{
@@ -62,9 +69,20 @@
     .my_mainslide .news_small .container .job_posting{
         display: none;
     }
-    
+    /* history section */
+    .graph{
+        display: none;
+    }
+    main .counters .counter_list{
+        gap: 10px;
+    }
+    main .counters .counter_list li span {
+        font-size: 6vw;
+    }
+    main .counters .counter_list li h3, main .counters .counter_list li h4{
+        font-size: 3.5vw;
+    }
 }
-/* my_mainslide */
     
 /* mobile */
 @media (max-width:768px){
@@ -92,9 +110,7 @@
         font-size: 28px;
         line-height: 38px;
     }
-    .my_mainslide .slide_container .slide .content p:first-child{
-        font-size: 18px;
-    }
+    
     .my_mainslide .slide_container .slide .content p.ko{
         font-size: 16px;
         line-height: 28px;
@@ -108,5 +124,16 @@
     'FILL' 0,
     'wght' 7
     }
+/* history section */
+main .counters .counter_list{
+    flex-wrap: wrap;
+}
+main .counters .counter_list li span {
+    font-size: 10vw;
+}
+main .counters .counter_list li h3, main .counters .counter_list li h4{
+    font-size: 5.5vw;
+}
 
 }
+

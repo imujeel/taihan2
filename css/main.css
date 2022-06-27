@@ -344,7 +344,7 @@ main .counters{
 main .counters .counter_list{
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 8vw;
 }
 main .counters .counter_list li{
     text-align:center;
