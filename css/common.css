@@ -245,11 +245,39 @@ header .logo a{
     background: url(../images/taihanlogo_transparent.svg) no-repeat;
     transform: translateY(-5px);
 }
+/* mobile menu */
 .mobile_menu_toggle{
     display: none;
     color:var(--white);
-
 }
+nav.active{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--white);
+    z-index:100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav.active ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav.active ul li ul{
+    display: none; /*임시적으로 안보이게*/
+}
+nav.active *{
+    color: var(--primary-c);
+    
+}
+
  /* Search field */
 .search_field.active{display: block;}
 .search_field{

@@ -86,3 +86,17 @@ let searchIcon = $('header .top_links .search'),
                 header.css({display:'block'});
             }
     })//fixed submenu
+
+let mobileMenuOpen = $('.tops_links mobile_menu_toggle'),
+    mobileMenu = $('.header_wrapper nav');
+    //mobileMenuClose  = document.querySelector('.mobile_menu_close');
+
+    // mobileMenuOpen.addEventListener('click', ()=>{
+    //     mobileMenu.classList.add('active');
+    //     document.body.style.overflow = 'hidden';
+    // });
+
+    // mobileMenuClose.addEventListener('click', ()=>{
+    //     mobileMenu.classList.remove('active');
+    //     document.body.style.overflow = 'auto';
+    // });
