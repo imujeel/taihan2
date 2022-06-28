@@ -31,13 +31,13 @@
 /* MAIN PAGE */
     /* common fz */
     .main_tt{
-        font-size:5vw;
+        font-size:4vw;
         line-height: calc(var(--line-height)*2.4);
         margin: 0 20px;
     }
     .content p.ko{
-        font-size: 3vw;
-        line-height: calc(var(--line-height)*1.5);
+        font-size: 2.4vw;
+        line-height: 4vw;
         margin: var(--line-height) 20px;
     }
 
@@ -122,26 +122,24 @@
     }
     /* Certification section */
     main .certification .content ul{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 20px;
+        gap: 2vw;
     }
     .fp-overflow{
-        overflow-y:initial;
+        overflow-y:auto;
     }
     main .certification .content > a{
         position: static;
     }
-    main .certification .title {
-        margin: calc(var(--line-height)*4) 0;
-        margin-bottom:0;
-    }
+    
     main .certification{
         justify-content: space-between;
     }
-    main .certification .content{
+    /* main .certification .content{
         margin-bottom: var;
-    }
+    } */
     .section_p.ko{
         margin-bottom: var(--line-height);
     }
@@ -177,6 +175,10 @@
     footer .footer_menu .ft_container .menu_link li:after{
         display: none;
     }
+    main .certification .content li,main .certification .content img{
+        width: 41vw;
+    }
+  
 }
 
     
@@ -220,6 +222,7 @@
     'FILL' 0,
     'wght' 7
     }
+
 /* history section */
 main .counters .counter_list{
     /* flex-wrap: wrap; */
