@@ -134,9 +134,9 @@
         position: static;
     }
     
-    main .certification{
+    /* main .certification{
         justify-content: space-between;
-    }
+    } */
     /* main .certification .content{
         margin-bottom: var;
     } */
@@ -151,7 +151,19 @@
     main .certification .content .card_desc{
         text-align: left;
     }
+    main .certification .content li,main .certification .content img{
+        width: 41vw;
+    }
+    main .certification .content .card_desc h3{
+        font-size: 3vw;
+    }
+    main .certification .content .card_desc p{
+        font-size: 1.7vw;
+        margin-bottom: 0.9vw;
+    }
+    
     /* footer */
+
     /* footer .footer_menu .ft_container{
         width: 100vw;
     }
@@ -175,14 +187,12 @@
     footer .footer_menu .ft_container .menu_link li:after{
         display: none;
     }
-    main .certification .content li,main .certification .content img{
-        width: 41vw;
-    }
+    
   
 }
 
     
-/* mobile */
+/* small tablet */
 @media (max-width:768px){
     header .logo a{
         width: 100px;
@@ -194,6 +204,7 @@
     header .top_links li:nth-child(3){
         display: none;
     }
+    /* first Section */
     .slide_container .controls{
         display: none;
     }
@@ -205,35 +216,45 @@
     }
 
     .main_tt{
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 5.5vw;
+        line-height: 6vw;
     }
     
-    .my_mainslide .slide_container .slide .content p.ko{
-        font-size: 16px;
-        line-height: 28px;
+    .my_mainslide .slide_container .slide .content p.ko,.content p.ko{
+        font-size: 3.2vw;
+        line-height: 5vw;
     }
     .plus_btn{
         display: block;
     }
+    /* history section */
+    main .counters .counter_list li span {
+        font-size: 7vw;
+    }
+    main .counters .counter_list li h3, main .counters .counter_list li h4{
+        font-size: 3.4vw;
+    }
+    /* factory section */
+    /* product section */
+    main .products .category_wrapper .product_category ul li a span:first-child{
+        font-size: 3.5vw;
+    }
+    /* certification */
    
-    .material-symbols-rounded {
+    /* .material-symbols-rounded {
     font-variation-settings:
     'FILL' 0,
     'wght' 7
-    }
+    } */
 
-/* history section */
-main .counters .counter_list{
-    /* flex-wrap: wrap; */
+
+}
+/* mobile */
+@media (max-width:468px){
+    /* history section */
+    /* main .counters .counter_list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
     
 }
-main .counters .counter_list li span {
-    font-size: 10vw;
-}
-main .counters .counter_list li h3, main .counters .counter_list li h4{
-    font-size: 5.5vw;
-}
-
-}
-

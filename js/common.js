@@ -1,4 +1,3 @@
-
         function DropDownHeader(){
             let header = $('header'),
                 menu = header.find('.header_wrapper>nav>ul>li'),
@@ -6,6 +5,7 @@
                 newHeight = 0,
                 subMenu = menu.find('ul'),
                 link = menu.find('a');
+                
         
                 subMenu.each(function(){
                     if($(this).outerHeight()>newHeight){
@@ -20,20 +20,32 @@
                     header.stop().animate({height:headerHeight});
                 }
                 );//DropDownHeader
-        
 
         }
-    
+        
+        header.mouseover(function(){
+            let windowWidth = $(window).width();
+                if(windowWidth > 1023){
+                    DropDownHeader();
+                }
+        })
+        
+        
+
+        
+    /*
     $(window).resize(function(){
         let windowWidth = $(window).width();
-        let downIcon = $('.my_mainslide .scroll_down img')
+        let downIcon = $('.my_mainslide .scroll_down img');
             if(windowWidth > 1023){
                 DropDownHeader();
                 downIcon.attr('src','./images/scroll_down.svg');
             }else{
                 downIcon.attr('src','./images/swipe_down.svg');
             }
-    }); //responsive js
+    }); //responsive js */
+
+
 
 // let navMenu = $('header nav > ul > li'),
 //     highLight = $('.menu_highlight');
