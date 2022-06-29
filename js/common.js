@@ -1,39 +1,70 @@
-        function DropDownHeader(){
+
             let header = $('header'),
                 menu = header.find('.header_wrapper>nav>ul>li'),
                 headerHeight = header.outerHeight(),
                 newHeight = 0,
                 subMenu = menu.find('ul'),
                 link = menu.find('a');
-                
-        
-                subMenu.each(function(){
-                    if($(this).outerHeight()>newHeight){
-                        newHeight = headerHeight + $(this).outerHeight();
-                    }
-                });//subMenu 높이 구하기
-    
-                header.hover(function(){		
-                    header.stop().animate({height:newHeight});
-                },
-                function(){
-                    header.stop().animate({height:headerHeight});
-                }
-                );//DropDownHeader
+                let windowWidth = $(window).width();
 
-        }
-        
-        header.mouseover(function(){
-            let windowWidth = $(window).width();
+                    // subMenu.each(function(){
+                    //     if($(this).outerHeight()>newHeight){
+                    //         newHeight = headerHeight + $(this).outerHeight();
+                    //     }
+                    //     menu.mouseover(function(){
+                    //         if(windowWidth > 1023){
+                                
+                    //             header.stop().animate({height:newHeight});
+                    //         }
+                    //     });
+                    //     menu.mouseout(function(){
+                    //         let windowWidth = $(window).width();
+                    //         if(windowWidth > 1023){
+                    //             header.stop().animate({height:headerHeight});
+                    //         }
+                    //     });
+                    // });
+
+
                 if(windowWidth > 1023){
-                    DropDownHeader();
+                    subMenu.each(function(){
+                        if($(this).outerHeight()>newHeight){
+                            newHeight = headerHeight + $(this).outerHeight();
+                        }
+                        });//subMenu 높이 구하기
+                        menu.mouseover(function(){
+                            if(windowWidth > 1023){
+                                header.stop().animate({height:newHeight});
+                            }
+                        });
+                        menu.mouseout(function(){
+                            if(windowWidth > 1023){
+                                header.stop().animate({height:headerHeight});
+                            }
+                        });
+                        /*header.hover(function(){		
+                            header.stop().animate({height:newHeight});
+                        },
+                        function(){
+                            header.stop().animate({height:headerHeight});
+                        }
+                        );*/ //DropDownHeader
+
                 }
-        })
+
+       // }
+        
+        // header.mouseover(function(){
+        //     let windowWidth = $(window).width();
+        //         if(windowWidth > 1023){
+        //             DropDownHeader();
+        //         }
+        // })
         
         
 
         
-    /*
+    
     $(window).resize(function(){
         let windowWidth = $(window).width();
         let downIcon = $('.my_mainslide .scroll_down img');
@@ -43,7 +74,7 @@
             }else{
                 downIcon.attr('src','./images/swipe_down.svg');
             }
-    }); //responsive js */
+    }); //responsive js 
 
 
 
