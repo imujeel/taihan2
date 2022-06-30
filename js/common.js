@@ -26,7 +26,7 @@
                     // });
 
 
-                if(windowWidth > 1023){
+                //if(windowWidth > 1023){
                     subMenu.each(function(){
                         if($(this).outerHeight()>newHeight){
                             newHeight = headerHeight + $(this).outerHeight();
@@ -50,7 +50,7 @@
                         }
                         );*/ //DropDownHeader
 
-                }
+                //}
 
        // }
         
