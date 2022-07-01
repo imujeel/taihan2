@@ -7,26 +7,46 @@
                 link = menu.find('a');
                 let windowWidth = $(window).width();
 
-                    // subMenu.each(function(){
-                    //     if($(this).outerHeight()>newHeight){
-                    //         newHeight = headerHeight + $(this).outerHeight();
-                    //     }
-                    //     menu.mouseover(function(){
-                    //         if(windowWidth > 1023){
+                    /*
+                    subMenu.each(function(){
+                        if($(this).outerHeight()>newHeight){
+                            newHeight = headerHeight + $(this).outerHeight();
+                        }
+                        menu.mouseover(function(){
+                            if(windowWidth > 1023){
                                 
-                    //             header.stop().animate({height:newHeight});
-                    //         }
-                    //     });
-                    //     menu.mouseout(function(){
-                    //         let windowWidth = $(window).width();
-                    //         if(windowWidth > 1023){
-                    //             header.stop().animate({height:headerHeight});
-                    //         }
-                    //     });
-                    // });
+                                header.stop().animate({height:newHeight});
+                            }
+                        });
+                        menu.mouseout(function(){
+                            let windowWidth = $(window).width();
+                            if(windowWidth > 1023){
+                                header.stop().animate({height:headerHeight});
+                            }
+                        });
+                    });
+                    */
 
+                   
+                    menu.hover(function(){
+                        let windowWidth = $(window).width();
+             
+                        if(windowWidth > 1023){
+                            let subMenuHeight = $(this).find('ul').outerHeight();
+                            let newHeight = headerHeight + subMenuHeight;
+                            header.stop().animate({height:newHeight});
+                        }            
+                    },
+                    function(){
+                        let windowWidth = $(window).width();            
+                        if(windowWidth > 1023){
+                            header.stop().animate({height:headerHeight});
+                        }
+                    });
+                    
 
                 //if(windowWidth > 1023){
+                    /*
                     subMenu.each(function(){
                         if($(this).outerHeight()>newHeight){
                             newHeight = headerHeight + $(this).outerHeight();
@@ -42,13 +62,15 @@
                                 header.stop().animate({height:headerHeight});
                             }
                         });
+                        */
+
                         /*header.hover(function(){		
                             header.stop().animate({height:newHeight});
                         },
                         function(){
                             header.stop().animate({height:headerHeight});
                         }
-                        );*/ //DropDownHeader
+                        );//DropDownHeader
 
                 //}
 
@@ -65,7 +87,7 @@
 
         
     
-    $(window).resize(function(){
+   /* $(window).resize(function(){
         let windowWidth = $(window).width();
         let downIcon = $('.my_mainslide .scroll_down img');
             if(windowWidth > 1023){
@@ -74,7 +96,7 @@
             }else{
                 downIcon.attr('src','./images/swipe_down.svg');
             }
-    }); //responsive js 
+    });*/ //responsive js 
 
 
 
@@ -128,7 +150,7 @@ let searchIcon = $('header .top_links .search'),
                 subPageMenu.removeClass('sticky');
                 header.css({display:'block'});
             }
-    })//fixed submenu
+    });//fixed submenu
 
 let mobileMenuOpen = $('.tops_links mobile_menu_toggle'),
     mobileMenu = $('.header_wrapper nav');
@@ -143,3 +165,22 @@ let mobileMenuOpen = $('.tops_links mobile_menu_toggle'),
     //     mobileMenu.classList.remove('active');
     //     document.body.style.overflow = 'auto';
     // });
+
+let animateTarget = $('animate__animated[data-effect]');
+
+    $(window).scroll(function(){
+        let $sct = $(this).scrollTop();
+
+        animateTarget.each(function(){
+            let targetOst = $(this).offset().top - 400;
+            console.log($sct, targetOst);
+
+            if($sct>targetOst){
+                let targetClass = $(this).attr('data-effect');
+                $(this).addClass(targetClass);
+            }
+
+    
+        })
+    });
+    
