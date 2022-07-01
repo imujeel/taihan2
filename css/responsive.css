@@ -29,6 +29,8 @@
     }
     header:hover{
         background-image: none;
+        background-color:#fff;
+
     }
 
 /* MAIN PAGE */
@@ -209,6 +211,7 @@
     }
     header{
         padding:5px 20px;
+       
     }
     header .top_links li:nth-child(3){
         display: none;

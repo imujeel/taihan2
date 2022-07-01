@@ -22,7 +22,7 @@ main article .main_tt:before{
     left: -27px;
     background-image: linear-gradient(var(--primary-c) 0%, #F60230 100%);
 }
-main article h3.ko{
+main article .con_wrapper h3.ko{
     font-weight: 500;
     margin-bottom:var(--line-height);
     line-height: calc(var(--line-height)*1.9);
@@ -37,23 +37,23 @@ main:before{
     right: 0;
     top: 800px;
 }
-main > article > p{
+main > article .con_wrapper p{
     color: var(--sub-body-tc);
     width: 800px;
     font-size:calc(var(--body-fz)*1.167);
     line-height: 30px;
     margin-bottom: calc(var(--line-height)*2);
 }
-main > article > p.indent{
+main > article .con_wrapper p.indent{
     margin-left: 30px;
     margin-bottom: calc(var(--line-height)*1.667);
 }
-main > article > p.indent span{
+main > article .con_wrapper p.indent span{
     margin-right: 10px;
     font-weight: 600;
     color: var(--primary-c);
 }
-main .about_intro h3.ko em{
+main .about_intro .con_wrapper h3.ko em{
     font-weight: 500;
     font-size: 48px;
     color: var(--primary-c);

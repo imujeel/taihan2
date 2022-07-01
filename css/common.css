@@ -176,19 +176,21 @@ header{
     overflow: hidden;
     background-color: transparent;
     transition: background 0.4s;
+    
 }
 header:hover{
-    background-image: linear-gradient(#fff 80px,rgba(235, 235, 235, .7) 80px, #fff 74px);
+    background-image: linear-gradient(#fff 80px,rgba(235, 235, 235, .7) 80px, #fff 84px);
     transition: none;
 }
 header > .header_wrapper{
     display: flex;
+    gap: 1vw;
     align-items: center;
     justify-content: space-between;
 }
 header .header_wrapper nav > ul{
     display: flex;
-    gap:80px;
+    gap:4.16vw;
     line-height: 70px;
 }
 header .header_wrapper nav > ul > li{
@@ -490,7 +492,7 @@ footer .copyright div address small{
 }
 .banner .sub_menu_area .sub_wrapper .filter > a{
     line-height: 60px;
-    padding:0 40px;
+    padding:0px 80px 0px 30px;
 }
 .banner .sub_menu_area .sub_wrapper a span, .filter button span{
    transform: translateY(5px);
@@ -524,4 +526,8 @@ footer .copyright div address small{
 }
 .banner .sub_menu.sticky .sub_menu_area > a span{
     color: var(--white);
+}
+/* animated animation */
+[data-effect^="animate__fadeIn"]{
+    opacity: 0;
 }
