@@ -27,6 +27,9 @@
     .mobile_menu_toggle{
         display: block;
     }
+    header:hover{
+        background-image: none;
+    }
 
 /* MAIN PAGE */
     /* common fz */

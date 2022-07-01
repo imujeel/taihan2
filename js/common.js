@@ -166,21 +166,19 @@ let mobileMenuOpen = $('.tops_links mobile_menu_toggle'),
     //     document.body.style.overflow = 'auto';
     // });
 
-let animateTarget = $('animate__animated[data-effect]');
+let animateTarget = $('.animate__animated[data-effect]');
 
     $(window).scroll(function(){
         let $sct = $(this).scrollTop();
 
         animateTarget.each(function(){
-            let targetOst = $(this).offset().top - 400;
+            let targetOst = $(this).offset().top - 800;
             console.log($sct, targetOst);
 
             if($sct>targetOst){
                 let targetClass = $(this).attr('data-effect');
                 $(this).addClass(targetClass);
             }
-
-    
         })
     });
     
