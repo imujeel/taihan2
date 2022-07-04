@@ -176,10 +176,11 @@ header{
     overflow: hidden;
     background-color: transparent;
     transition: background 0.4s;
+    box-sizing: border-box;
     
 }
 header:hover{
-    background-image: linear-gradient(#fff 80px,rgba(235, 235, 235, .7) 80px, #fff 84px);
+    background-image: linear-gradient(#fff 70px,rgba(235, 235, 235, .7) 70px, #fff 74px);
     transition: none;
 }
 header > .header_wrapper{
@@ -252,19 +253,24 @@ header .logo a{
     display: none;
     color:var(--white);
 }
+.mobile_menu_close{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
 nav.active{
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background: var(--white);
+    background:var(--white);
     z-index:100;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 nav.active ul{
     display: flex;
@@ -273,7 +279,7 @@ nav.active ul{
     align-items: center;
 }
 nav.active ul li ul{
-    display: none; /*임시적으로 안보이게*/
+    display: none;
 }
 nav.active *{
     color: var(--primary-c);

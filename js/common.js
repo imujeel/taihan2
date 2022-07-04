@@ -1,47 +1,46 @@
-
-    let windowWidth = $(window).width();
-    
-   
         let header = $('header'),
             menu = header.find('.header_wrapper>nav>ul>li'),
-            headerHeight = header.outerHeight(),
+            headerHeight = '70px',
             newHeight = 0,
             subMenu = menu.find('ul');
-
-        subMenu.each(function(){
-            if($(this).outerHeight()>newHeight){
-                newHeight = headerHeight + $(this).outerHeight();
-            }//subMenu 높이 구하기
-
-            header.hover(function(){
-                if(windowWidth>1023){
-
-                    header.stop().animate({height:newHeight});
-                }		
-            },
-            function(){
-                if(windowWidth>1023){
-
+        let windowWidth = $(window).width();
+            
+            subMenu.each(function(){
+                if($(this).outerHeight()>newHeight){
+                    newHeight = headerHeight + $(this).outerHeight();
+                }
+                });//subMenu 높이 구하기
+               
+                header.hover(function(){
+                    windowWidth = $(window).width();
+                    
+                    if(windowWidth>1023){
+                        header.stop().animate({height:'340px'});
+                    }
+                    if(windowWidth<768){
+                        headerHeight = '60px';
+                    }
+                },
+                function(){
+                    windowWidth = $(window).width();
+                    if(windowWidth>1023){
                     header.stop().animate({height:headerHeight});
-                }		
-            }
-            );
-
-        });
-    
-   
-
-  
-
-            
-            
-                
-
-
-            
-
-
-
+                    }
+                    
+                }
+                );//DropDownHeader
+                $(window).resize(function(){
+                    windowWidth = $(window).width();
+                    if(windowWidth<768){
+                        headerHeight = '50px';
+                        header.css({height:headerHeight});
+                    }else{
+                        headerHeight = '70px';
+                        header.css({height:headerHeight});
+                    }
+                })
+                $(window).trigger('resize');
+               
 // let navMenu = $('header nav > ul > li'),
 //     highLight = $('.menu_highlight');
 
@@ -79,34 +78,40 @@ let searchIcon = $('header .top_links .search'),
             })
     });//dropDown subpage menu
 
-    let subPageMenu = $('.banner .sub_menu'),
-        subPageMenuOst = subPageMenu.offset().top;
+    if($('.banner').length){
+        let subPageMenu = $('.banner .sub_menu'),
+            subPageMenuOst = subPageMenu.offset().top;
+    
+            $(window).scroll(function(){
+                let sct = $(this).scrollTop();
+                if(sct > subPageMenuOst){
+                    subPageMenu.addClass('sticky');
+                    header.css({display:'none'});
+    
+                }else{
+                    subPageMenu.removeClass('sticky');
+                    header.css({display:'block'});
+                }
+        });//fixed submenu
 
-        $(window).scroll(function(){
-            let sct = $(this).scrollTop();
-            if(sct > subPageMenuOst){
-                subPageMenu.addClass('sticky');
-                header.css({display:'none'});
+    }
+    
 
-            }else{
-                subPageMenu.removeClass('sticky');
-                header.css({display:'block'});
-            }
-    });//fixed submenu
+let mobileMenuOpen = $('.top_links li .mobile_menu_toggle'),
+    mobileMenu = $('.header_wrapper nav'),
+    mobileMenuClose  = $('.mobile_menu_close');
+    console.log(mobileMenuOpen);
 
-let mobileMenuOpen = $('.tops_links mobile_menu_toggle'),
-    mobileMenu = $('.header_wrapper nav');
-    //mobileMenuClose  = document.querySelector('.mobile_menu_close');
+    mobileMenuOpen.click(function(){
+        console.log('click');
+        mobileMenu.addClass('active');
+        body.css({overflow:'hidden'});
+    });
 
-    // mobileMenuOpen.addEventListener('click', ()=>{
-    //     mobileMenu.classList.add('active');
-    //     document.body.style.overflow = 'hidden';
-    // });
-
-    // mobileMenuClose.addEventListener('click', ()=>{
-    //     mobileMenu.classList.remove('active');
-    //     document.body.style.overflow = 'auto';
-    // });
+    mobileMenuClose.click(function(){
+        mobileMenu.removeClass('active');
+        body.css({overflow:'auto'});
+    });//mobile menu
 
 let animateTarget = $('.animate__animated[data-effect]');
 
