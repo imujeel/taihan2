@@ -14,9 +14,10 @@
         order:3;
     }
     header{
-        padding:10px 40px;
+        padding:15px 40px;
         background: #fff;
         box-shadow: 1px 1px 4px rgb(0 0 0 / 10%);
+        
     }
     header .top_links *{
         color: var(--primary-c);
@@ -27,12 +28,17 @@
     .mobile_menu_toggle{
         display: block;
     }
+    .mobile_menu_toggle{
+        display: block;
+    }
     header:hover{
         background-image: none;
-        background-color:#fff;
-
+        background-color: #fff;
     }
-
+    .mobile_menu_close{
+        display: block;
+    }
+    
 /* MAIN PAGE */
     /* common fz */
     .main_tt{
@@ -88,6 +94,7 @@
         font-size: 3.5vw;
         margin-bottom: 6vw;
     }
+    
     
     /* factory section */
     main .factory:after{
@@ -199,7 +206,58 @@
         display: none;
     }
     
-  
+    /* SUB PAGE BANNER */
+    :root{
+        --con-width : 100vw;
+    }
+    .banner .banner_wrapper .title_wrapper{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+        text-align: center;
+    }
+    .banner .banner_wrapper .title_wrapper .indicator{
+        font-size: 2vw;
+    }
+    .banner .banner_wrapper .main_tt{
+        font-size: 5vw;
+    }
+    .banner .banner_wrapper{
+        height: 260px;
+    }
+    .banner .banner_wrapper .sub_menu_area{
+        width: 100vw;
+    }
+    
+
+    /* ABOUT US */
+
+    main > article{
+        margin:60px;
+    }
+    .about_vision .vision_infographic ul{
+        gap: 10px;
+    }
+    .about_vision .vision_infographic ul li:first-child{
+        flex: 1;
+        
+    }
+    .about_vision .vision_infographic ul li:nth-child(2){
+        flex: 1;
+        
+    }
+    .about_vision .vision_infographic ul li:last-child{
+        flex: 1;
+        
+    }
+    main > article .con_wrapper p{
+        width: 80vw;
+        
+    }
+    .about_vision .vision_infographic ul li div{
+        width: 30vw;
+        height: 30vw;
+    }
 }
 
     
@@ -210,7 +268,7 @@
         transform: none;
     }
     header{
-        padding:5px 20px;
+        padding:8px 20px;
        
     }
     header .top_links li:nth-child(3){
@@ -274,6 +332,61 @@
     'wght' 7
     } */
 }
+
+/* SUB PAGE BANNER */
+:root{
+    --con-width : 100vw;
+}
+.banner .banner_wrapper .title_wrapper{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
+}
+.banner .banner_wrapper .title_wrapper .indicator{
+    font-size: 2vw;
+}
+.banner .banner_wrapper .main_tt{
+    font-size: 5vw;
+}
+.banner .banner_wrapper{
+    height: 260px;
+}
+.banner .banner_wrapper .sub_menu_area{
+    width: 100vw;
+}
+
+
+/* ABOUT US */
+
+main > article{
+    margin:60px;
+}
+.about_vision .vision_infographic ul{
+    gap: 10px;
+}
+.about_vision .vision_infographic ul li:first-child{
+    flex: 1;
+    
+}
+.about_vision .vision_infographic ul li:nth-child(2){
+    flex: 1;
+    
+}
+.about_vision .vision_infographic ul li:last-child{
+    flex: 1;
+    
+}
+main > article .con_wrapper p{
+    width: 80vw;
+    
+}
+.about_vision .vision_infographic ul li div{
+    width: 30vw;
+    height: 30vw;
+}
+}
+
 /* mobile */
 @media (max-width:468px){
     /* history section */
@@ -322,3 +435,4 @@
         font-size: 3.5vw;
     }
 }
+
