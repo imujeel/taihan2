@@ -1,6 +1,9 @@
 /* COMMON HEADER */
     /* tablet */
 @media screen and (max-width:1023px){
+    :root{
+        --con-width : 100%;
+    }
     header nav, header .top_links .language{
         display: none;
     }
@@ -207,9 +210,6 @@
     }
     
     /* SUB PAGE BANNER */
-    :root{
-        --con-width : 100vw;
-    }
     .banner .banner_wrapper .title_wrapper{
         left: 50%;
         top: 50%;
@@ -219,7 +219,7 @@
     .banner .banner_wrapper .title_wrapper .indicator{
         font-size: 2vw;
     }
-    .banner .banner_wrapper .main_tt{
+    .banner .banner_wrapper .title_wrapper .main_tt{
         font-size: 5vw;
     }
     .banner .banner_wrapper{
@@ -258,7 +258,7 @@
         width: 30vw;
         height: 30vw;
     }
-}
+}/*1023*/
 
     
 /* small tablet */
@@ -331,13 +331,14 @@
     'FILL' 0,
     'wght' 7
     } */
-}
+
+}/*768*/
 
 /* SUB PAGE BANNER */
-:root{
+/* :root{
     --con-width : 100vw;
-}
-.banner .banner_wrapper .title_wrapper{
+} */
+/* .banner .banner_wrapper .title_wrapper{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -70%);
@@ -351,15 +352,15 @@
 }
 .banner .banner_wrapper{
     height: 260px;
-}
-.banner .banner_wrapper .sub_menu_area{
+} */
+/* .banner .banner_wrapper .sub_menu_area{
     width: 100vw;
-}
+} */
 
 
 /* ABOUT US */
 
-main > article{
+/* main > article{
     margin:60px;
 }
 .about_vision .vision_infographic ul{
@@ -384,8 +385,8 @@ main > article .con_wrapper p{
 .about_vision .vision_infographic ul li div{
     width: 30vw;
     height: 30vw;
-}
-}
+} */
+
 
 /* mobile */
 @media (max-width:468px){
@@ -434,5 +435,5 @@ main > article .con_wrapper p{
     main .certification .content > a{
         font-size: 3.5vw;
     }
-}
+}/* 468 */
 
