@@ -748,18 +748,6 @@ section.active .stystems{
     background: #fff;
 }
 
-.popup{
-    width: 500px;
-    padding: 20px;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    z-index: 10;
-    background: #fff;
-    box-shadow:3px 5px 10px rgba(0,0,0,.2);
-    border-radius:8px;
-}
-
 .plus_btn{
     background: var(--primary-c);
     width: 50px;height: 50px;
@@ -773,4 +761,53 @@ section.active .stystems{
     font-weight: 700;
 }
 
-/* COOKIE */
+/* COOKIE POPUP */
+.popup{
+    width: 600px;
+    padding: 40px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 10;
+    background: #fff;
+    box-shadow:3px 5px 10px rgba(0,0,0,.2);
+    border-radius:8px;
+    box-shadow: 0 0 5px var(--primary-c);
+}
+.popup *{
+    line-height: calc(var(--line-height)*1.2);
+    color: var(--sub-body-tc);
+    font-size: calc(var(--body-fz)*0.9);
+}
+.popup .modal_tt{
+    font-size: calc(var(--body-fz)*1.3);
+    margin-bottom: var(--line-height);
+    color: var(--primary-c);
+    font-weight: 500;
+}
+
+.popup .modal_caption em{
+    color: var(--primary-c);
+    font-weight: 600;
+    border-bottom: 1.6px solid var(--point-c);
+}
+.popup .modal_caption li:not(:last-child) a{
+    font-weight: 600;
+    border-bottom: 1.6px solid var(--point-c);
+    color: #000;
+}
+.popup .modal_caption li:last-child a{
+    color: var(--primary-c);
+}
+.popup .modal_caption.cap_info b{
+    font-weight: 600;
+}
+.popup .close_area{
+    display: flex;
+    justify-content: space-between;
+}
+.popup .close_area #close span{
+    font-size: calc(var(--body-fz)*1.4);
+    color: #000;
+    font-weight: 700;
+}
