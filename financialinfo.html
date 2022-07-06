@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js">
+    
     <link rel="stylesheet" href="css/financialinfo.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -160,11 +160,50 @@
         </section>
         <main class="container ko">
             <article class="about_intro">
-                <h2 class="ko category_tt animate__animated animate__fadeInUp">Investor relations</h2>
+                <h2 class="ko category_tt animate__animated animate__fadeInUp">financial information</h2>
                 <h2 class="main_tt animate__animated animate__fadeInLeft">매출액</h2>
                 <div class="chart-container">
                     <canvas id="bar-chart"></canvas>
                   </div>
+
+                  <div class="tab-wrapper">
+                    <ul class="tab-menu">
+                        <li><a href="#tabs-1" class="active">2019</a></li>
+                        <li><a href="#tabs-2">2020</a></li>
+                        <li><a href="#tabs-3">2021</a></li>
+                        <li><a href="#tabs-3">2022</a></li>
+                    </ul>
+                    <div id="tab-content">
+                        <div id="tabs-1">
+                            <h2>Menu 1</h2>
+                            <table>
+                                <colgroup>
+                                  <col class="column1">
+                                  <col class="columns2plus3" span="2">
+                                </colgroup>
+                                <tr>
+                                  <th>Lime</th>
+                                  <th>Lemon</th>
+                                  <th>Orange</th>
+                                </tr>
+                                <tr>
+                                  <td>Green</td>
+                                  <td>Yellow</td>
+                                  <td>Orange</td>
+                                </tr>
+                              </table>
+                        </div>
+                        <div id="tabs-2">
+                            <h2>Menu 2</h2>
+                            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                        </div>
+                        <div id="tabs-3">
+                            <h2>Menu 3</h2>
+                            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                        </div>
+                    </div>
+                </div>	
             </article>
 
             
@@ -200,8 +239,12 @@
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
         <script src="js/common.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
         <script src="js/financialinfo.js"></script>
         
 </body>
 </html>
+
