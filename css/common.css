@@ -198,6 +198,13 @@ header .header_wrapper nav > ul > li{
     position: relative;
     white-space:nowrap;
 }
+/* header .header_wrapper nav > ul > li > ul > li{
+    opacity: 0.65;
+} */
+/* body .implemented{
+    opacity: 1;
+} */
+
 /* header .header_wrapper nav{
     position: relative;
 }

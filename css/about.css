@@ -58,6 +58,9 @@ main .about_intro .con_wrapper h3.ko em{
     font-size: 48px;
     color: var(--primary-c);
 }
+.about_vision{
+    overflow: hidden;
+}
 .about_vision .vision_infographic ul{
     display: flex;
     gap: 120px;

@@ -1,6 +1,9 @@
-/* COMMON HEADER */
-    /* tablet */
+/* tablet */
 @media screen and (max-width:1023px){
+    .popup{
+        width: 58vw;
+    }
+    /* ------------ COMMON HEADER ------------ */
     :root{
         --con-width : 100%;
     }
@@ -42,7 +45,7 @@
         display: block;
     }
     
-/* MAIN PAGE */
+    /* ------------ MAIN PAGE ------------ */
     /* common fz */
     .main_tt{
         font-size:4vw;
@@ -97,8 +100,6 @@
         font-size: 3.5vw;
         margin-bottom: 6vw;
     }
-    
-    
     /* factory section */
     main .factory:after{
         transform: rotate(-90deg);
@@ -151,7 +152,6 @@
     main .certification .content > a{
         position: static;
     }
-    
     /* main .certification{
         justify-content: space-between;
     } */
@@ -192,9 +192,9 @@
         width: 100vw;
         margin: 0 auto;
     } */
-    footer .footer_menu .container{
+    /* footer .footer_menu .container{
         width: 100vw;
-    }
+    } */
     footer .copyright .container{
         width: 100vw
     }
@@ -209,7 +209,7 @@
         display: none;
     }
     
-    /* SUB PAGE BANNER */
+    /* ------------ SUB PAGE BANNER (공통) ------------ */
     .banner .banner_wrapper .title_wrapper{
         left: 50%;
         top: 50%;
@@ -225,13 +225,12 @@
     .banner .banner_wrapper{
         height: 260px;
     }
-    .banner .banner_wrapper .sub_menu_area{
+    /* .banner .banner_wrapper .sub_menu_area{
         width: 100vw;
-    }
+    } */
     
 
-    /* ABOUT US */
-
+    /* ------------ ABOUT US (sub page) ------------*/
     main > article{
         margin:60px;
     }
@@ -255,13 +254,17 @@
         
     }
     .about_vision .vision_infographic ul li div{
-        width: 30vw;
-        height: 30vw;
+        width: 25vw;
+        height: 25vw;
+    }
+    .banner .sub_menu_area .sub_wrapper .filter > a{
+        padding: 0px 7.8vw 0px 3vw;
     }
 }/*1023*/
 
     
 /* small tablet */
+ /* ------------ MAIN PAGE ------------ */
 @media (max-width:768px){
     header .logo a{
         width: 100px;
@@ -325,14 +328,50 @@
     main .certification .content .card_desc a{
         font-size: 1.8vw;
     }
+    /* ------------ ABOUT US (sub page) ------------ */
+    .banner .sub_menu_area .sub_wrapper .filter > a{
+        padding: 0px 3.9vw 0px 3.9vw;
+    }
+    .banner .sub_menu_area a {
+        padding: 0 15px;
+    }
+    .banner .sub_menu_area .sub_wrapper .filter > a {
+        padding: 0px 2vw 0px 5vw;
+    }
+    .banner .sub_menu_area .sub_wrapper > a{
+        display: none;
+    }
+    .banner{
+        margin-top: 50px;
+    }
    
-    /* .material-symbols-rounded {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 7
-    } */
-
 }/*768*/
+@media (max-width:564px){
+    .banner .sub_menu_area .sub_wrapper .filter > a {
+        padding: 0px 1vw 0px 3vw;
+    }
+    .banner .sub_menu_area .sub_wrapper .filter{
+        border-right: 0.5px solid #909090;
+    }
+    .banner .sub_menu_area .sub_wrapper a,.banner .sub_menu.sticky .sub_menu_area > a{
+        font-size: 17px;
+    }
+    .banner .sub_menu_area .sub_wrapper .filter button{
+        margin-right: 0;
+    }
+    .banner .sub_menu_area .sub_wrapper{
+        flex: 2;
+    }
+    .banner .sub_menu_area .sub_wrapper .first_filter{
+        flex: 1;
+    }
+    .banner .sub_menu_area .sub_wrapper .second_filter{
+        flex: 1;
+    }
+    .banner .sub_menu_area > a{
+        flex: 1;
+    }
+}/*564*/
 
 /* SUB PAGE BANNER */
 /* :root{
