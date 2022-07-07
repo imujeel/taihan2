@@ -69,6 +69,7 @@ let searchIcon = $('header .top_links .search'),
 
     let showListBtn = $('.sub_menu_area button');
         subMenList = $('.sub_menu_list');
+    
 
         subMenList.hide();
         showListBtn.click(function(e){
@@ -76,7 +77,9 @@ let searchIcon = $('header .top_links .search'),
             $(this).find('span').text(function(i, text){
                 return text === "arrow_drop_down" ? "arrow_drop_up" : "arrow_drop_down";
             })
-    });//dropDown subpage menu
+    });
+       
+    
 
     if($('.banner').length){
         let subPageMenu = $('.banner .sub_menu'),
@@ -129,3 +132,5 @@ let animateTarget = $('.animate__animated[data-effect]');
         })
     });
     
+    
+        

@@ -44,11 +44,10 @@
     .mobile_menu_close{
         display: block;
     }
-    
     /* ------------ MAIN PAGE ------------ */
     /* common fz */
     .main_tt{
-        font-size:4vw;
+        font-size:5.8vw;
         line-height: calc(var(--line-height)*2.4);
         margin: 0 20px;
     }
@@ -257,6 +256,28 @@
         width: 25vw;
         height: 25vw;
     }
+    .about_vision .vision_infographic ul li div span{
+        font-size:6vw ;
+    }
+    .about_vision .vision_infographic ul li div p:nth-child(2){
+        font-size:4vw;
+    }
+    .about_vision .vision_infographic ul li div p:last-child{
+        font-size:3vw;
+    }
+    .about_vision .vision_infographic ul li div:after{
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+    }
+    .about_vision .vision_infographic ul li div{
+        gap: 1.2vw;
+    }
+    .about_vision .vision_infographic ul li > p{
+        font-size: 2.2vw;
+        line-height: 3vw;
+    }
     .banner .sub_menu_area .sub_wrapper .filter > a{
         padding: 0px 7.8vw 0px 3vw;
     }
@@ -289,7 +310,7 @@
     }
 
     .main_tt{
-        font-size: 5.5vw;
+        font-size: 6.5vw;
         line-height: 6vw;
     }
     
@@ -350,9 +371,9 @@
     .banner .sub_menu_area .sub_wrapper .filter > a {
         padding: 0px 1vw 0px 3vw;
     }
-    .banner .sub_menu_area .sub_wrapper .filter{
+    /* .banner .sub_menu_area .sub_wrapper .filter{
         border-right: 0.5px solid #909090;
-    }
+    } */
     .banner .sub_menu_area .sub_wrapper a,.banner .sub_menu.sticky .sub_menu_area > a{
         font-size: 17px;
     }
@@ -367,9 +388,14 @@
     }
     .banner .sub_menu_area .sub_wrapper .second_filter{
         flex: 1;
+        border-right: 0;
     }
     .banner .sub_menu_area > a{
         flex: 1;
+        font-size:17px;
+    }
+    .banner .banner_wrapper .title_wrapper .main_tt{
+        font-size: 7vw;
     }
 }/*564*/
 
@@ -429,6 +455,17 @@ main > article .con_wrapper p{
 
 /* mobile */
 @media (max-width:468px){
+    /* ------------ SEARCH FILED ------------ */
+    .search_field fieldset form .search_box{
+        width: 66vw;
+    }
+    /* .search_field fieldset form .search_box a{
+        right: -65px;
+    } */
+    /* .search_field fieldset form p:last-child input{
+        width:50vw;
+        height: 10vw;
+    } */
     /* history section */
     /* main .counters .counter_list{
         flex-direction: row;

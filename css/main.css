@@ -667,7 +667,7 @@ section.active .stystems{
 /* history section의 svg 스타일 */
 	.st0{
         fill:#48AEEF;
-        animation:moveUp 3s ease-in-out forwards;
+        animation:moveUp 4s ease-in-out forwards;
 }
     @keyframes moveUp{
 		0%{transform:translate(0);}
@@ -677,11 +677,11 @@ section.active .stystems{
 	.st1{
         fill:none;
         stroke:#48AEEF;
-        stroke-width:3;
+        stroke-width:3.5;
         stroke-miterlimit:10;
         stroke-dasharray:1300;
         stroke-dashoffset:1300;
-        animation:line 1.5s linear forwards;
+        animation:line 2s linear forwards;
     }
     @keyframes line{
 		0%{stroke-dashoffset:980;}
@@ -779,7 +779,7 @@ section.active .stystems{
     left: 50%;
     transform: translate(-50%,-50%);
     overflow-y:auto;
-    height: 50%;
+    height: 45%;
     z-index: 10;
     background: #fff;
     box-shadow:3px 5px 10px rgba(0,0,0,.2);

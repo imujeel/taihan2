@@ -14,7 +14,7 @@
 			const lapse = 6000;
 			
 			if(destination.item.querySelectorAll('.fp-slides').length){
-			  g_interval = setInterval(function () {
+			  g_interval = setInterval(function(){
 				fullpage_api.moveSlideRight();
 			  }, lapse);
 			}
@@ -26,9 +26,13 @@
 				$('header').removeClass('active'); 
 			}
 
-			if(destination.index = 1){
-				numAnimation();
-			};
+			if(destination.index == 1){
+				let comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+					$('#years').animateNumber({number: 81,numberStep:comma_separator_number_step},{easing: 'swing',duration: 1700});
+					$('#group').animateNumber({number: 843,numberStep:comma_separator_number_step},{easing: 'swing',duration: 1700});
+					$('#public').animateNumber({number: 100,numberStep:comma_separator_number_step},{easing: 'swing',duration: 1700});
+					$('#sales').animateNumber({number: 1596842, numberStep:comma_separator_number_step},{easing: 'swing',duration: 1000});
+			};//Number animation
 		}
 	});//fullPage
 
@@ -85,14 +89,7 @@
 				showBtn.removeClass('active');
 			}
 		});//smallNews toggle btn
-		
-function numAnimation(){
-	let comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
-		$('#years').animateNumber({number: 81,numberStep:comma_separator_number_step},{easing: 'swing',duration: 1700});
-		$('#group').animateNumber({number: 843,numberStep:comma_separator_number_step},{easing: 'swing',duration: 1700});
-		$('#public').animateNumber({number: 100,numberStep:comma_separator_number_step},{easing: 'swing',duration: 1700});
-		$('#sales').animateNumber({number: 1596842, numberStep:comma_separator_number_step},{easing: 'swing',duration: 1000});
-}// Number animation
+	
 
 		let miniPager = $('.pagers_small a'),
 			currentIdx = 0,

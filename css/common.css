@@ -353,7 +353,7 @@ nav.active *{
 }
 .search_field fieldset form .search_box a{
     position: absolute;
-    background: url(../images/exit_btn.svg);
+    background: url(../images/exit_btn.svg) no-repeat;
     width: 50px;height: 50px;
     text-indent: -9999em; 
     right: -80px;
