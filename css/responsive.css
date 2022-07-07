@@ -368,6 +368,41 @@
    
 }/*768*/
 @media (max-width:564px){
+    /* ------------ MAIN Certification ------------ */
+    main .certification .content ul{
+        flex-direction: column;
+    }
+    main .certification .content li, main .certification .content img{
+        width: 70vw;
+        height: 35vw;
+    }
+    main .certification .title{
+        margin: calc(var(--line-height)*5) 0 calc(var(--line-height)*1.5);
+    }
+    main .certification .content > a{
+        margin-bottom: 10px;
+    }
+    main .certification .content{
+        gap: 15px;
+    }
+    .section_p.ko{
+        margin-bottom: 0;
+    }
+    main .certification .content .card_desc h3{
+        font-size: 4.5vw;
+    }
+    main .certification .content .card_desc p{
+        font-size: 3vw;
+    }
+    main .certification .content .card_desc a{
+        font-size: 3vw;
+    }
+    main .certification .content .card_desc{
+        margin: 6vw 9vw;
+    }
+    
+    /* var(--primary-c) url(../images/high_quality_FILL0_wght400_GRAD0_opsz48.svg) 98% 2px/30px no-repeat */
+
     .banner .sub_menu_area .sub_wrapper .filter > a {
         padding: 0px 1vw 0px 3vw;
     }
@@ -397,6 +432,7 @@
     .banner .banner_wrapper .title_wrapper .main_tt{
         font-size: 7vw;
     }
+
 }/*564*/
 
 /* SUB PAGE BANNER */
@@ -493,9 +529,7 @@ main > article .con_wrapper p{
     }
     
    /* certification */
-    main .certification .content .card_desc{
-        margin: 3vw 7vw;
-    }
+    
     main .certification .content .card_desc h3{
         margin-bottom: 2vw;
     }
