@@ -16,6 +16,7 @@
                     
                     if(windowWidth>1023){
                         header.stop().animate({height:'340px'});
+                        
                     }
                     if(windowWidth<768){
                         headerHeight = '60px';
@@ -30,13 +31,19 @@
                 }
                 );//DropDownHeader
                 $(window).resize(function(){
-                    windowWidth = $(window).width();
+                    let downIcon = $('.my_mainslide .scroll_down img');
+                        windowWidth = $(window).width();
                     if(windowWidth<768){
                         headerHeight = '50px';
                         header.css({height:headerHeight});
                     }else{
                         headerHeight = '70px';
                         header.css({height:headerHeight});
+                    }
+                    if(windowWidth>1023){
+                        downIcon.attr('src','./images/scroll_down.svg');
+                    }else{
+                        downIcon.attr('src','./images/swipe_down.svg');
                     }
                 })
                 $(window).trigger('resize');
@@ -108,12 +115,12 @@ let mobileMenuOpen = $('.top_links li .mobile_menu_toggle'),
     mobileMenuOpen.click(function(){
         console.log('click');
         mobileMenu.addClass('active');
-        body.css({overflow:'hidden'});
+        $(body).css({overflow:'hidden'});
     });
 
     mobileMenuClose.click(function(){
         mobileMenu.removeClass('active');
-        body.css({overflow:'auto'});
+        $(body).css({overflow:'auto'});
     });//mobile menu
 
 let animateTarget = $('.animate__animated[data-effect]');

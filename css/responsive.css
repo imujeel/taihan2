@@ -1,49 +1,51 @@
 /* tablet */
+
 @media screen and (max-width:1023px){
     .popup{
         width: 58vw;
     }
     /* ------------ COMMON HEADER ------------ */
-    :root{
-        --con-width : 100%;
-    }
-    header nav, header .top_links .language{
-        display: none;
-    }
-    header .top_links li:nth-child(2){
-        order:2;
-    } 
-    header .top_links li:nth-child(3){
-        order:1;
-    }
-    header .top_links li:nth-child(4){
-        order:3;
-    }
-    header{
-        padding:15px 40px;
-        background: #fff;
-        box-shadow: 1px 1px 4px rgb(0 0 0 / 10%);
-        
-    }
-    header .top_links *{
-        color: var(--primary-c);
-    }
-    header .top_links .client{
-        border-color: var(--primary-c);
-    }
-    .mobile_menu_toggle{
-        display: block;
-    }
-    .mobile_menu_toggle{
-        display: block;
-    }
-    header:hover{
-        background-image: none;
-        background-color: #fff;
-    }
-    .mobile_menu_close{
-        display: block;
-    }
+        :root{
+            --con-width : 100%;
+        }
+        header nav, header .top_links .language{
+            display: none;
+        }
+        header .top_links li:nth-child(2){
+            order:2;
+        } 
+        header .top_links li:nth-child(3){
+            order:1;
+        }
+        header .top_links li:nth-child(4){
+            order:3;
+        }
+        header{
+            padding:15px 40px;
+            background: #fff;
+            box-shadow: 1px 1px 4px rgb(0 0 0 / 10%);
+            
+        }
+        header .top_links *{
+            color: var(--primary-c);
+        }
+        header .top_links .client{
+            border-color: var(--primary-c);
+        }
+        .mobile_menu_toggle{
+            display: block;
+        }
+        .mobile_menu_toggle{
+            display: block;
+        }
+        header:hover{
+            background-image: none;
+            background-color: #fff;
+        }
+        .mobile_menu_close{
+            display: block;
+        }
+    
     /* ------------ MAIN PAGE ------------ */
     /* common fz */
     .main_tt{
@@ -183,7 +185,9 @@
     }
     
     /* footer */
-
+    footer .copyright div{
+        justify-content: center;
+    }
     /* footer .footer_menu .ft_container{
         width: 100vw;
     }
@@ -349,6 +353,24 @@
     main .certification .content .card_desc a{
         font-size: 1.8vw;
     }
+    /* footer */
+    footer .footer_menu{
+        /* height: 15vw; */
+        display: flex;
+        align-items: center;
+    }
+    footer .footer_menu .ft_container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    footer .footer_menu .ft_container .social_link{
+        margin: 0 auto;
+        border-style: none;
+        height: auto;
+        
+    }
+    
     /* ------------ ABOUT US (sub page) ------------ */
     .banner .sub_menu_area .sub_wrapper .filter > a{
         padding: 0px 3.9vw 0px 3.9vw;
@@ -522,7 +544,7 @@ main > article .con_wrapper p{
     main .factory:after{
         width: 100%;
         height: 100%;
-        top: -200px;
+        top: -210px;
     }
     main .history .content{
         padding-top: 25vw;
@@ -545,5 +567,45 @@ main > article .con_wrapper p{
     main .certification .content > a{
         font-size: 3.5vw;
     }
+    footer .footer_menu .ft_container .menu_link{
+        gap: 4vw;
+    }
+    footer .footer_menu .ft_container .menu_link li a{
+        font-size: 12px;
+    }
+    footer .copyright div address p{
+        font-size: 12px;
+    }
+    footer .copyright div address small{
+        font-size: 8px;
+    }
+    footer .copyright div .footer_logo,footer .copyright div address hr{
+        display: none;
+    }
+    footer .copyright{
+        height: 30vw;
+        text-align: center;
+        padding:5px 10px;
+    }
 }/* 468 */
+@media (max-width:375px){
+    /* MAIN */
+    main .factory:after{
+        top: -140px;
+    }
+    main .products .prod_con_wrapper .content{
+        padding-top: 80px;
+    }
+    main .certification .title{
+        margin: auto;
+        
+    }
+    main .certification{
+        transform: translateY(9%);
+    }
+    
+}/* 375 IphoneSE*/
 
+
+/* 구간 : 
+1023, 768, 564, 468, 375 */

@@ -747,6 +747,16 @@ section.active .stystems{
     transition: 0.5s;
     background: #fff;
 }
+#menu.active li a{
+    border: 1px solid var(--primary-c);
+}
+#menu.active li a:after{
+    background:var(--primary-c);
+}
+#menu.active li.active a{
+    transition: 0.5s;
+    background: var(--primary-c);
+}
 
 .plus_btn{
     background: var(--primary-c);
@@ -759,6 +769,24 @@ section.active .stystems{
     color: var(--white);
     font-size: 40px;
     font-weight: 700;
+    z-index: 10;
+    box-shadow: var(--shadow-text);
+}
+.play_btns.active{
+    transform: rotate(30deg);
+    transition: 0.3s;
+}
+.plus_btn.active::before{
+    content: '';
+    height: 50px;
+    width: 280px;
+    left: 0;right: 0;top: 0;
+    border-radius: 50px;
+    background:var(--primary-c);
+    position: absolute;
+    z-index: -5;
+    
+    
 }
 
 /* COOKIE POPUP */
@@ -779,7 +807,7 @@ section.active .stystems{
     left: 50%;
     transform: translate(-50%,-50%);
     overflow-y:auto;
-    height: 45%;
+    height: 450px;
     z-index: 10;
     background: #fff;
     box-shadow:3px 5px 10px rgba(0,0,0,.2);

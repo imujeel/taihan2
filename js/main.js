@@ -33,6 +33,13 @@
 					$('#public').animateNumber({number: 100,numberStep:comma_separator_number_step},{easing: 'swing',duration: 1700});
 					$('#sales').animateNumber({number: 1596842, numberStep:comma_separator_number_step},{easing: 'swing',duration: 1000});
 			};//Number animation
+			let anchorsMenu = $('#menu');
+			if(destination.index == 3 || destination.index == 4){
+					anchorsMenu.addClass('active');
+			};//anchorMenuColorChange
+			if(destination.index == 2){
+					anchorsMenu.removeClass('active');
+			};//anchorMenuColorChange
 		}
 	});//fullPage
 
@@ -169,3 +176,10 @@
                 delCookie('ABC','Main Page');
             }
         });
+
+		let mobilePlusBtn = $('.plus_btn');
+
+			mobilePlusBtn.click(function(){
+				$(this).toggleClass('active');
+				
+			})
