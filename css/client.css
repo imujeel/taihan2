@@ -4,7 +4,7 @@
 main{
     background: url(../images/product_bg.png) no-repeat 100% 100%/cover;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     
 }
 
@@ -18,7 +18,7 @@ main section{
     
 }
 main section > h1{
-    padding-top: calc(var(--line-height)*13);
+    padding-top: calc(var(--line-height)*9);
     color: var(--primary-c);
     margin-bottom: calc(var(--line-height)*3);
 }
@@ -75,8 +75,8 @@ main section > h1{
     justify-content: center;
     position: relative;
     transition: 0.3s;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     border-radius: 10px;
     background:rgba(154, 184, 226, 0.4);
     box-shadow:3px 4px 15px rgba(0, 42, 101, 0.5);
@@ -98,4 +98,5 @@ section > p{
     font-size: calc(var(--body-fz)*1.4);
     text-decoration: underline;
     color: var(--point-c);
+    margin-bottom: calc(var(--line-height)*6);
 }
