@@ -7,8 +7,8 @@
     --ko-ff: 'Noto Sans KR', sans-serif;
     --body-fz: 18px;
     --line-height: 24px;
-    --primary-c :#003d94;
-    --secondary-c :#9ab8e2;
+    --primary-c :rgb(0, 61, 148);
+    --secondary-c :rgb(154, 184, 226);
     --point-c :#48aeef;
     --white : #fff;
     --sub-body-tc:#555;
@@ -30,6 +30,12 @@ header a{
     color: var(--white);
     text-transform:uppercase;
 }
+main article .main_tt{
+    text-transform: uppercase;
+    line-height: calc(var(--line-height)*3);
+    position: relative;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: var(--title-ff);
 }
@@ -53,10 +59,25 @@ h1,h2,h3,h4,h5,h6{
     font-size:calc(var(--body-fz)*2.667);
     font-weight: 700;
 }
+
 .category_tt{
     font-size:calc(var(--body-fz)*2.111);
     font-weight: 700;
-
+}
+main article .category_tt{
+    margin:calc(var(--line-height)*3) 0 calc(var(--line-height)*1.8);
+}
+main article .ko{
+    font-size: calc(var(--body-fz)*1.8);
+    color: var(--sub-body-tc);
+}
+main article .main_tt:before{
+    content:'';
+    position: absolute;
+    width: 5px;
+    height:100%;
+    left: -27px;
+    background-image: linear-gradient(var(--primary-c) 0%, #F60230 100%);
 }
 .w_color{
     color: var(--white);

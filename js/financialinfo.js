@@ -6,20 +6,20 @@ const labels = [
   ];
   let data2019 = {
       label: '2019',
-      backgroundColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgb(72, 174, 239)',
       borderColor: 'rgb(255, 0, 0)',
       data: [3139, 3236, 3303, 4271],
   };
 
   let data2020 = {
       label: '2020',
-      backgroundColor: 'rgb(0, 0, 900)',
+      backgroundColor: 'rgb(0, 61, 148)',
       borderColor: 'rgb(0, 0, 255)',
       data: [3630, 3783, 2798, 4272],
     };
     let data2021 = {
         label: '2021',
-        backgroundColor: 'rgb(0, 0, 100)',
+        backgroundColor: 'rgb(154, 184, 226)',
         borderColor: 'rgb(0, 0, 255)',
         data: [3917, 4142, 4563, 5989],
         }; 

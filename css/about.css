@@ -2,26 +2,8 @@
 
 /* CONTENT */
 /* LAYOUT */
-main article .ko{
-    font-size: calc(var(--body-fz)*1.8);
-    color: var(--sub-body-tc);
-}
-main article .category_tt{
-    margin:calc(var(--line-height)*3) 0 calc(var(--line-height)*1.8);
-}
-main article .main_tt{
-    text-transform: uppercase;
-    line-height: calc(var(--line-height)*3);
-    position: relative;
-}
-main article .main_tt:before{
-    content:'';
-    position: absolute;
-    width: 5px;
-    height:100%;
-    left: -27px;
-    background-image: linear-gradient(var(--primary-c) 0%, #F60230 100%);
-}
+
+
 main article .con_wrapper h3.ko{
     font-weight: 500;
     margin-bottom:var(--line-height);

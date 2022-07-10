@@ -285,6 +285,15 @@
     .banner .sub_menu_area .sub_wrapper .filter > a{
         padding: 0px 7.8vw 0px 3vw;
     }
+    /* ------------ 재무정보 page ------------*/
+    .chart-container { 
+        width: 70vw;
+        height: 40vw;
+        border: 1px solid #ddd;
+        padding: 5vw;
+        border-radius: 4px;
+        margin: var(--line-height) 0;
+      }
 }/*1023*/
 
     
@@ -387,7 +396,10 @@
     .banner{
         margin-top: 50px;
     }
-   
+    /* ------------ 재무정보 ------------ */
+    .tab-menu li a{
+        padding: 0.5vw 5.2vw;
+    }
 }/*768*/
 @media (max-width:564px){
     /* ------------ MAIN Certification ------------ */
@@ -458,18 +470,6 @@
     .search_field fieldset form .search_box{
         width: 66vw;
     }
-    /* .search_field fieldset form .search_box a{
-        right: -65px;
-    } */
-    /* .search_field fieldset form p:last-child input{
-        width:50vw;
-        height: 10vw;
-    } */
-    /* history section */
-    /* main .counters .counter_list{
-        flex-direction: row;
-        flex-wrap: wrap;
-    } */
     /* history */
     main .counters .counter_list{
         flex-direction: row;
@@ -556,6 +556,34 @@
     .banner .banner_wrapper .title_wrapper .main_tt{
         font-size: 7vw;
     }
+    main article .main_tt{
+        line-height: calc(var(--line-height)*1.7);
+    }
+    main article .con_wrapper h3.ko{
+        font-size: 21px;
+        line-height: calc(var(--line-height)*1.3); */
+    }
+    main .about_intro .con_wrapper h3.ko em{
+        font-size: 24px;
+    }
+    main > article .con_wrapper p{
+    font-size: 15px;
+    }
+    main > article .con_wrapper p.indent{
+        margin-left: 0;
+    }
+    main > article .con_wrapper p{
+        width: auto;
+    }
+    .banner .sub_menu.sticky .sub_menu_area > a{
+        font-size: 12px;
+    }
+    .banner .sub_menu_area > a span{
+        font-size: 20px;
+    }
+    .about_vision .vision_infographic ul{
+        transform: translateX(-5%);
+    }
 
 
 }/* 468 */
@@ -597,6 +625,13 @@
     .banner .sub_menu_area > a span{
         font-size: 18px;
     }
+    .about_vision .image_container{
+        display: none;
+    }
+    .about_vision .vision_infographic ul{
+        transform: translateX(-10%);
+    }
+    /* display: inline-block; */
 }/* 375 IphoneSE*/
 
 
