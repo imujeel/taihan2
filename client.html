@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal - 대한전선 taihan 리뉴얼 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css변수, css-flex, jquery">
+    <meta name="description" content="css-flex 기반 레이아웃, Jquery, 웹표준, 웹접근성 준수하는 포트폴리오 ">
+    <meta name="robots" content="index,follow">
+    <meta name="authour" content="JUMI LEE">
+    <meta name="reply-to" content="marpungsun@gmail.com">
+    <meta name="generator" content="visual studio code">
+    <meta name="copyright" content="(c)Jumi Lee">
+    <meta name="google-site-verification" content="p1be1Z8nEUtG3eBQMRqclAnlVVHz7uxLd-hSnwn1BIc" /> 
+    <!-- Modernizer -->
+    <!-- open graph -->
+    <meta property="og:title" content="taihan Website renewal(대한전선 웹사이트 리뉴얼)" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="https://imujeel.github.io/taihan2/"/>
+    <meta property="og:description" content="JUMI's portfolio : taihan Website renewal(대한전선 웹사이트 리뉴얼) "/> 
+    <meta property="og:image" content="https://imujeel.github.io/taihan2/images/opengraphimg.jpg " />
+    <!-- favicon --> 
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- 기타 라이브러리 (레티나, 등등) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css.map">
+    <link rel="stylesheet" href="css/client.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="active">
+        <div class="header_wrapper">
+                <h1 class="logo"><a href="index.html">taihan</a></h1>
+                <nav>
+                    <button class="mobile_menu_close material-symbols-rounded">close</button>
+                    <ul>
+                        <li>
+                            <a href="about.html">about us</a>
+                            <ul>
+                                <li><a href="about.html">회사소개</a></li>
+                                <li><a href="">경쟁력</a></li>
+                                <li><a href="">연혁</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">products</a>
+                            <ul>
+                                <li><a href="products.html">사업개요</a></li>
+                                <li><a href="">전력분야</a></li>
+                                <li><a href="">통신분야</a></li>
+                                <li><a href="">소재분야</a></li>
+                                <li><a href="">시스템분야</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">careers</a>
+                            <ul>
+                                <li><a href="">인재상</a></li>
+                                <li><a href="">복지제도</a></li>
+                                <li><a href="">채용안내</a></li>
+                                <li><a href="">채용지원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">esg</a>
+                            <ul>
+                                <li><a href="">환경경영</a></li>
+                                <li><a href="">윤리경영</a></li>
+                                <li><a href="">지배구조</a></li>
+                            </ul>
+                        </li>
+                        <li class="target">
+                            <a href="investor.html">investor relations</a>
+                            <ul>
+                                
+                                <li><a href="financialinfo.html">재무정보</a></li>
+                                <li><a href="">주식 및 주주정보</a></li>
+                                <li><a href="">IR 자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">newsroom</a>
+                            <ul>
+                                <li><a href="">회사소식</a></li>
+                                <li><a href="">기술자료실</a></li>
+                                <li><a href="">홍보자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <span class="menu_highlight"></span> -->
+                </nav>
+                <ul class="top_links">
+                    <li>
+                        <a href="" class="language material-symbols-rounded">language</a>
+                    </li>
+                    <li>
+                        <a href="" class="search material-symbols-rounded">search</a>
+                    </li>
+                    <li>
+                        <a href="" class="client btn w_color"><span class="material-symbols-rounded">person_pin</span>Client Portal</a>
+                    </li>
+                    <li><button class="mobile_menu_toggle material-symbols-rounded">menu</button></li>
+                </ul>
+            </div>
+        </header>
+        <div class="search_field hidden">
+            <fieldset>
+                <legend class="hidden">검색</legend>
+                <form action="#" method="get">
+                    <p>대한전선에 궁금한 것이 있으신가요?</p>
+                    <p class="search_box">
+                        <label for="usersearch"></label>
+                        <input type="text" id="usersearch" name="usersearch" placeholder="무엇이든 검색하세요." autofocus>
+                        <button>Search</button>
+                        <a href="" class="search_exit">Exit</a>
+                    </p>
+                </form>
+            </fieldset>
+        </div>
+    <main>
+        <section class="client_section">
+            <h1 class="sub_tt">Welcome to taihan Client Portal</h1>
+            <div class="client_wrapper">
+                <div class="card_b2b">
+                    <h1>B2B</h1>
+                    <h2>자재발주</h2>
+                    <a href="" >go<span class="material-symbols-rounded">
+                        trending_flat
+                        </span></a>
+                </div>
+                <div class="card_Q">
+                    <h1>Q & A</h1>
+                    <h2>고객문의</h2>
+                    <a href="">go<span class="material-symbols-rounded">
+                        trending_flat
+                        </span></a>
+                </div>
+            </div>
+            <p>Need more help?</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_menu">
+            <div class="ft_container container">
+                <ul class="menu_link">
+                    <li><a href="">사이트맵</a></li>
+                    <li><a href="">개인정보 처리방침</a></li>
+                    <li><a href="">윤리경영</a></li>
+                    <li><a href="">웹접근성 도움말</a></li>
+                </ul>
+                <ul class="social_link">
+                    <li><a href="" class="fa-brands fa-linkedin-in"></a></li>
+                    <li><a href="" class="fa-brands fa-instagram"></a></li>
+                    <li><a href="" class="fa-brands fa-facebook-f"></a></li>
+                    <li><a href="" class="fa-brands fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <img src="./images/taihanlogo_transparent_footer.svg" alt="taihanlogo" class="footer_logo">
+                <address>
+                    <p>(서울 사옥) 서울특별시 서초구 양재대로2길 19 호반파크 2관</p>
+                    <p>대표번호 : 02-316-9114</p>
+                    <hr>
+                    <small>COPYRIGHT &copy;2011 Taihan Cable &amp; Solution Co., Ltd. ALL RIGHT RESERVED</small>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G14LSVPM0M"></script>
+    
+    
+</body>
+</html>

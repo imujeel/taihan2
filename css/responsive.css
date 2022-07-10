@@ -294,6 +294,15 @@
         border-radius: 4px;
         margin: var(--line-height) 0;
       }
+
+      /* ------------ Client Portal ------------*/
+      main section.client_section > h1{
+        padding-top: calc(var(--line-height)*9);
+      }
+      .client_wrapper {
+          flex-direction: column;
+          gap: 2vw;
+      }
 }/*1023*/
 
     
@@ -400,6 +409,24 @@
     .tab-menu li a{
         padding: 0.5vw 5.2vw;
     }
+    /* ------------ Client Portal ------------ */
+    .client_section h1{
+        font-size: calc(var(--body-fz)*2.667);
+        margin: 0 50px;
+        text-align: center;
+        /* padding-top:calc(var(--line-height)*5); */
+    }
+    .client_section .client_wrapper{
+        margin-top: 40px;
+    }
+    .client_section .client_wrapper div{
+        width: 80vw;
+        height: 60vw;
+    }
+    footer .footer_menu{
+        margin-top: 20vw;
+    }
+
 }/*768*/
 @media (max-width:564px){
     /* ------------ MAIN Certification ------------ */
@@ -461,7 +488,22 @@
     .banner .banner_wrapper .title_wrapper .main_tt{
         font-size: 7vw;
     }
+    /* ------------ Client Portal ------------ */
+    
+    main section.client_section > h1{
+        padding-top: calc(var(--line-height)*4);
+        font-size: calc(var(--body-fz)*2);
+    }
+    .client_wrapper div h1{
+        font-size: calc(var(--body-fz)*1.6);
+    }
+    .client_wrapper div h2{
+        font-size: calc(var(--body-fz)*1.8);
+    }
+    .client_wrapper div a{
+        padding: 1.6vw;
 
+    }
 }/*564*/
 
 /* mobile */
@@ -632,6 +674,24 @@
         transform: translateX(-10%);
     }
     /* display: inline-block; */
+     /* ------------ Client Portal ------------ */
+    
+     main section.client_section > h1{
+        padding-top: calc(var(--line-height)*3.4);
+        font-size: calc(var(--body-fz)*1.4);
+    }
+    .client_wrapper div h1{
+        font-size: calc(var(--body-fz)*1.3);
+    }
+    .client_wrapper div h2{
+        font-size: calc(var(--body-fz)*1.4);
+    }
+    .client_wrapper div a{
+        padding: 0.9vw;
+    }
+    .client_wrapper div{
+        gap: calc(var(--line-height)*0.7);
+    }
 }/* 375 IphoneSE*/
 
 
