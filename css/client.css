@@ -66,7 +66,7 @@ main section > h1{
     color: var(--white);
     transition: 0.3s;
 }
-
+-
 .client_wrapper div{
     display: flex;
     gap: calc(var(--line-height)*1.8);
