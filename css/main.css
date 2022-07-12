@@ -327,6 +327,11 @@ main .history .graph{
     width: 100%;
     z-index: 1;
 }
+main .history_wrapper .content h2,main .history_wrapper .content p,main .history_wrapper .content a{
+    position: relative;
+    z-index: 10;
+}
+
 .history.fp-table{
     display: inline-block;
 }

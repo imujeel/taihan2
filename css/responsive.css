@@ -89,6 +89,7 @@
     }
     .graph{
         width: 150%;
+        display: none;
     }
     main .counters .counter_list{
         gap: 10px;
