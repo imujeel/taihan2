@@ -424,9 +424,9 @@
         width: 80vw;
         height: 60vw;
     }
-    footer .footer_menu{
+    /* footer .footer_menu{
         margin-top: 20vw;
-    }
+    } */
 
 }/*768*/
 @media (max-width:564px){
@@ -628,6 +628,10 @@
         transform: translateX(-5%);
     }
 
+    .client_wrapper div{
+        gap:6vw;
+        
+    }
 
 }/* 468 */
 @media (max-width:375px){
